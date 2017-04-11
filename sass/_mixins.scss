@@ -3,17 +3,12 @@
   #{$property}: calc(#{$expression});
 }
 
-@mixin constructBanner($direction, $banner-width, $banner-height, $logo-area)  {
+@mixin constructBanner($direction, $banner-width, $banner-height, $logo-area: false)  {
+  position: relative;
   width: $banner-width;
   height: $banner-height;
-  // display: -webkit-box;
-  // display: -webkit-flex;
-  // -webkit-flex-wrap: wrap;
-  position: relative;
   @if ($direction == 'vertical') {
-    // -webkit-box-orient: vertical;
-    // flex-direction: column;
-    @if $logo-area != 'flex' {
+    @if $logo-area {
       @if $logo-width > $banner-width and $logo-height < $logo-area {
     		.company-logo {
     			width: $banner-width;
@@ -38,11 +33,8 @@
       }
     }
 
-  }
-  @else if ($direction == 'horizontal') {
-    // -webkit-box-orient: horizontal;
-    // flex-direction: row;
-    @if $logo-area != 'flex' {
+  } @else if ($direction == 'horizontal') {
+    @if $logo-area {
       @if $logo-width > $logo-area and $logo-height < $banner-height {
     		.company-logo {
     			width: $logo-area;
