@@ -1,0 +1,853 @@
+
+#skyscraper {
+
+  $format: 'vertical';
+	$banner-width: 120px;
+	$banner-height: 600px;
+	$title-area: 110px;
+	$subtitle-container: 'flex';
+	$image-container: 276px;
+	$logo-area: 80px;
+
+  @include constructBanner($format, $banner-width, $banner-height);
+  @include addFlexFixed('title-area', $format, $title-area);
+  @include addFlexFixed('banner-image', $format, $image-container);
+  @include addFlexGrow('subtitle-container', $format, auto, 134px);
+	@include addFlexFixed('button-area', $format, 30px);
+  @include addFlexGrow('logo-area', $format, auto, 80px, 120px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+
+		h1 {
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
+
+	.subtitle-container {
+		.table-cell {
+			vertical-align: top;
+			padding-top: 4%;
+		}
+		h2,
+		h3 {
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 1.2;
+		}
+	}
+
+	.logo-area{
+		.company-logo {
+			max-width: 80px;
+		}
+	}
+
+
+}
+/*
+===============================================================
+WIDE SKYSCRAPPER Banner: w160 h600 image: w160 h276
+===============================================================
+*/
+#wide-skyscraper {
+
+	$banner-width: 160px;
+	$banner-height: 600px;
+	$title-area: 110px;
+	$subtitle-container: 'flex';
+	$image-container: 276px;
+	$logo-area: 100px;
+	$format: 'vertical';
+	//@include banner-vertical-structure($banner-width, $banner-height, $title-area, $image-container, $subtitle-container, $logo-area);
+	// @include logo-position($banner-width, false, $logo-area);
+
+	@include constructBanner($format, $banner-width, $banner-height);
+  @include addFlexFixed('title-area', $format, $title-area);
+  @include addFlexFixed('banner-image', $format, $image-container);
+  @include addFlexGrow('subtitle-container', $format, 94px, 94px);
+	@include addFlexFixed('button-area', $format, 30px);
+  @include addFlexGrow('logo-area', $format, 120px, 80px, 120px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+		h1 {
+			font-size: 18px;
+			line-height: 1.1;
+		}
+	}
+
+	.subtitle-container {
+		h2,
+		h3 {
+			margin: 10px auto;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+
+	.banner-button {
+
+	}
+	.logo-area{
+
+	}
+	.company-logo {
+		max-width: 60%;
+	}
+}
+/*
+===============================================================
+HALF PAGE Banner: w300 h600 image: w300 h276
+===============================================================
+*/
+#half-page {
+
+	$banner-width: 300px;
+	$banner-height: 600px;
+	$title-area: 140px;
+	$subtitle-container: 'flex';
+	$image-container: 276px;
+	$logo-area: 104px;
+	$format: 'vertical';
+
+	//@include banner-vertical-structure($banner-width, $banner-height, $title-area, $image-container, $subtitle-container, $logo-area, 100%, 100%, $logo-area );
+	// @include logo-position($banner-width, false, $logo-area);
+	@include constructBanner($format, $banner-width, $banner-height);
+  @include addFlexFixed('title-area', $format, $title-area);
+  @include addFlexFixed('banner-image', $format, $image-container);
+  @include addFlexGrow('subtitle-container', $format, 84px, 84px, 104px);
+	@include addFlexFixed('button-area', $format, 30px);
+  @include addFlexGrow('logo-area', $format, 100px, 80px, 100px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+		h1 {
+			/* font-weight: normal; */
+			font-size: 21px;
+			line-height: 1.1;
+		}
+	}
+
+	.subtitle-container {
+		h2,
+		h3 {
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 1.2;
+			/* font-weight: 600; */
+		}
+	}
+
+	.company-logo {
+		max-width: 38%;
+	}
+}
+/*
+===============================================================
+VERTICAL RECTANGLE Banner: w240 h400 image: w240 h168
+===============================================================
+*/
+#vertical-rectangle {
+
+	width: 240px;
+	height: 400px;
+
+	$banner-width: 240px;
+	$banner-height: 400px;
+	$title-area: 100px;
+	$subtitle-container: 'flex';
+	$image-container: 168px;
+	$logo-area: 80px;
+
+
+	// @include banner-vertical-structure($banner-width, $banner-height, $title-area, $image-container, $subtitle-container, $logo-area);
+	// @include logo-position($banner-width, 90px);
+	@include constructBanner($format, $banner-width, $banner-height);
+	@include addFlexFixed('title-area', $format, $title-area);
+	@include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexGrow('subtitle-container', $format, auto, 66px);
+	@include addFlexFixed('button-area', $format, 30px);
+	@include addFlexGrow('logo-area', $format, auto, 66px, 66px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+		h1 {
+			font-size: 20px;
+		}
+	}
+
+	.subtitle-container {
+
+		h2,
+		h3 {
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 1.2;
+		}
+	}
+
+	.logo-area{
+		.company-logo {
+			max-width: 38%;
+		}
+	}
+
+
+	.banner-button {
+		top: $image-container + $title-area - 35;
+		left: auto;
+		margin-left: auto;
+		right: 10px;
+	}
+
+}
+/*
+===============================================================
+ SQUARE Banner: w200 h200 image: w200 h66
+===============================================================
+*/
+#small-square {
+
+	$banner-width: 200px;
+	$banner-height: 200px;
+	$title-area: 60px;
+	$subtitle-container: 'flex';
+	$image-container: 66px;
+	$logo-area: 'flex';
+
+	@include constructBanner($format, $banner-width, $banner-height);
+  @include addFlexFixed('title-area', $format, $title-area);
+  @include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexGrow('subtitle-container', $format, auto, 34px);
+	@include addFlexFixed('button-area', $format, 30px);
+	@include addFlexGrow('logo-area', $format, 40px, 40px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+		h1 {
+
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+
+	.subtitle-container {
+		h2,
+		h3 {
+			font-size: 12px;
+			padding: 4% 4%;
+		}
+	}
+
+	.logo-area {
+		.company-logo {
+			display: inline;
+			max-width: 36%;
+			max-height: 100%;
+		}
+
+	}
+
+
+	.banner-button {
+		display: none;
+	}
+
+}
+/*
+===============================================================
+PORTRAIT Banner: w300 h1050 image: w300 h558
+===============================================================
+*/
+#portrait {
+
+	$banner-width: 300px;
+	$banner-height: 1050px;
+	$title-area: 185px;
+	$image-container: 558px;
+	$subtitle-container: 187px;
+	$logo-area: 120px;
+
+	@include constructBanner($format, $banner-width, $banner-height);
+  @include addFlexFixed('title-area', $format, $title-area);
+  @include addFlexFixed('banner-image', $format, $image-container);
+  @include addFlexGrow('subtitle-container', $format, 187px, 120px, 227px);
+	@include addFlexFixed('button-area', $format, 30px);
+  @include addFlexGrow('logo-area', $format, 120px, 80px, 120px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+
+		h1 {
+			font-size: 28px;
+			line-height: 1.1;
+		}
+	}
+
+	.subtitle-container {
+
+		h2,
+		h3 {
+			font-weight: normal;
+			font-size: 23px;
+			line-height: 1.2;
+		}
+	}
+
+	.banner-button {
+		bottom: 130px;
+	}
+
+}
+/*
+===============================================================
+MOBILE LEADERBOARD Banner: w320 h50 image: w122 h50
+===============================================================
+*/
+#mobile-leaderboard {
+
+	$format: 'horizontal';
+	$banner-width: 320px;
+	$banner-height: 50px;
+	$title-area: 130px;
+	$subtitle-container: 'flex';
+	$image-container: 120px;
+	$logo-area: 70px;
+
+	@include constructBanner($format, $banner-width, $banner-height);
+  @include addFlexFixed('title-area', $format, $title-area);
+  @include addFlexFixed('banner-image', $format, $image-container);
+  //@include addFlexGrow('subtitle-container', $format, auto, 84px);
+	//@include addFlexFixed('button-area', $format, 30px);
+  @include addFlexFixed('logo-area', $format, 70px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+		h1 {
+			/* font-weight: normal; */
+			font-size: 12px;
+			line-height: 1.1;
+			text-align: left;
+		}
+	}
+
+	.banner-button {
+		display: none;
+	}
+
+	.subtitle-container {
+		display: none;
+	}
+
+	.company-logo {
+		max-width: 66%;
+	}
+}
+/*
+===============================================================
+BANNER Banner: w468 h60 image: w224 h60
+===============================================================
+*/
+#banner {
+
+	$format: 'horizontal';
+	$banner-width: 468px;
+	$banner-height: 60px;
+	$title-area: 132px;
+	$subtitle-container: 'flex';
+	$image-container: 224px;
+	$logo-area: 112px;
+
+	@include constructBanner($format, $banner-width, $banner-height);
+  @include addFlexFixed('title-area', $format, $title-area);
+  @include addFlexFixed('banner-image', $format, $image-container);
+  //@include addFlexGrow('subtitle-container', $format, auto, 84px);
+	@include addFlexFixed('button-area', $format, 30px);
+  @include addFlexFixed('logo-area', $format, 112px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+
+		h1 {
+			/* font-weight: normal; */
+			text-align: left;
+			font-size: 12px;
+			line-height: 1;
+		}
+	}
+
+	.subtitle-container {
+		display: none;
+	}
+
+	.banner-button {
+		bottom: 6px;
+		left: 270px;
+		margin-left: 0;
+	}
+	.company-logo {
+		max-width: 64%;
+	}
+
+
+
+}
+/*
+===============================================================
+SQUARE Banner: w250 h250 image: w250 h78
+===============================================================
+*/
+#square {
+
+	$banner-width: 250px;
+	$banner-height: 250px;
+	$title-area: 64px;
+	$subtitle-container: 'auto';
+	$image-container: 78px;
+	$logo-area: 53px;
+
+	@include constructBanner($format, $banner-width, $banner-height);
+  @include addFlexFixed('title-area', $format, $title-area);
+  @include addFlexFixed('banner-image', $format, $image-container);
+  @include addFlexGrow('subtitle-container', $format, auto, 44px);
+	@include addFlexFixed('button-area', $format, 30px);
+  @include addFlexGrow('logo-area', $format, auto, 53px, 64px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+
+		h1 {
+			/* font-weight: normal; */
+			text-align: left;
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
+
+	.subtitle-container {
+    h3 {
+			text-align: left;
+			font-size: 13px;
+		}
+
+	}
+
+	.logo-area {
+		width: 110px;
+		min-height: 53px;
+		margin-right: 0;
+		margin-left: auto;
+		.table-cell{
+			vertical-align: bottom;
+			padding-bottom: 15px;
+		}
+		.company-logo {
+			width: 76px;
+		}
+	}
+
+	.banner-button {
+		bottom: 15px;
+		left: 15px;
+		margin-left: 0;
+	}
+
+
+}
+/*
+===============================================================
+LARGE RECTANGLE Banner: w336 h280 image: w336 h98
+===============================================================
+*/
+#large-rectangle {
+
+	$banner-width: 336px;
+	$banner-height: 280px;
+	$title-area: 70px;
+	$subtitle-container: 'flex';
+	$image-container: 98px;
+	$logo-area: 100%;
+
+	//@include banner-vertical-structure($banner-width, $banner-height, $title-area, $image-container, $subtitle-container, 100%, false);
+	// @include logo-position($banner-width, $logo-area);
+	@include constructBanner($format, $banner-width, $banner-height);
+	@include addFlexFixed('title-area', $format, $title-area);
+	@include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexGrow('subtitle-container', $format, auto, 44px);
+	@include addFlexFixed('button-area', $format, 30px);
+	@include addFlexGrow('logo-area', $format, auto, 53px, 64px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+
+		h1 {
+			/* font-weight: normal; */
+			text-align: left;
+			font-size: 18px;
+			line-height: 1.2;
+		}
+	}
+
+	.subtitle-container {
+		h3 {
+			font-size: 14px;
+		}
+		text-align: left;
+	}
+
+	.logo-area {
+		width: 220px;
+		min-height: 45px;
+		margin-right: 0;
+		margin-left: auto;
+		.table-cell{
+			vertical-align: bottom;
+			text-align: right;
+			padding-bottom: 15px;
+			padding-right: 15px;
+		}
+		.company-logo {
+			width: 44%;
+		}
+	}
+
+	.banner-button {
+		bottom: 15px;
+		left: 15px;
+		margin-left: 0;
+	}
+
+
+}
+/*
+===============================================================
+INLINE RECTANGLE Banner: w300 h250 image: w300 h78
+===============================================================
+*/
+#inline-rectangle {
+
+	$banner-width: 300px;
+	$banner-height: 250px;
+	$title-area: 70px;
+	$subtitle-container: 'flex';
+	$image-container: 78px;
+	$logo-area: 102px;
+	$format: 'vertical';
+
+	@include constructBanner($format, $banner-width, $banner-height);
+	@include addFlexFixed('title-area', $format, $title-area);
+	@include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexGrow('subtitle-container', $format, auto, 51px);
+	@include addFlexFixed('button-area', $format, 30px);
+	@include addFlexGrow('logo-area', $format, auto, 40px, 51px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+		h1 {
+			/* font-weight: normal; */
+			text-align: left;
+			font-size: 18px;
+			line-height: 1.2;
+		}
+	}
+
+	.subtitle-container {
+		h3 {
+			font-size: 14px;
+		}
+		text-align: left;
+	}
+
+	.logo-area {
+		.table-cell {
+			text-align: right;
+			vertical-align: bottom;
+	    padding-right: 4%;
+			padding-bottom: 4%;
+		}
+		.company-logo {
+			max-height: 26px * 1.2;
+			width: auto;
+		}
+	}
+
+	.banner-button {
+		bottom: 4%;
+		left: 4%;
+		margin-left: 0;
+	}
+
+
+}
+/*
+===============================================================
+LARGE LEADERBOARD Banner: w970 h90 image: w434 h90
+===============================================================
+*/
+#large-leaderboard {
+
+	$banner-width: 970px;
+	$banner-height: 90px;
+	$title-area: 226px;
+	$subtitle-container: 'flex';
+	$image-container: 434px;
+	$logo-area: 'flex';
+	$format: 'horizontal';
+
+	//@include banner-horizontal-structure($banner-width, $banner-height, $title-area, $image-container, $subtitle-container, 312px);
+	//@include logo-position($banner-height, auto, right, 100px, 50px );
+	//@include order('subtitle-container','image-container','title-area','logo-area');
+	@include constructBanner($format, $banner-width, $banner-height);
+	@include addFlexFixed('title-area', $format, $title-area);
+	@include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexGrow('subtitle-container', $format, 190px, 190px, auto);
+	@include addFlexFixed('button-area', $format, 30px);
+	@include addFlexGrow('logo-area', $format, 110px, auto, 120px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+
+		h1 {
+			text-align: left;
+			font-size: 18px;
+			line-height: 1.1;
+		}
+		h3 {
+			font-size: 10s;
+		}
+	}
+
+	.subtitle-container {
+		display: table;
+		text-align: left;
+		h2,
+		h3 {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+
+	.logo-area	{
+		.company-logo {
+			max-width: 60%;
+		}
+	}
+	.banner-button {
+		bottom: 10px;
+		left: 242px;
+		margin-left: 0;
+	}
+
+}
+/*
+===============================================================
+BILLBOARD Banner: w970 h250 image: w410 h250
+===============================================================
+*/
+#billboard {
+
+	$banner-width: 970px;
+	$banner-height: 250px;
+	$title-area: 270px;
+	$subtitle-container: 'flex';
+	$image-container: 410px;
+	$logo-area: 90px;
+	$format: 'horizontal';
+	@include constructBanner($format, $banner-width, $banner-height);
+	@include addFlexFixed('title-area', $format, $title-area);
+	@include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexFixed('flex-column', $format, 290px);
+	$format: 'vertical';
+
+	@include addFlexGrow('subtitle-container', $format, auto, 84px);
+	@include addFlexFixed('button-area', $format, 30px);
+	@include addFlexGrow('logo-area', $format, auto, 80px, 120px);
+ 	@include order('title-area','banner-image','flex-column','subtitle-container', 'logo-area');
+
+	.title-area {
+
+		h1 {
+			text-align: left;
+			font-size: 24px;
+			line-height: 1.2;
+		}
+	}
+
+	.subtitle-container {
+		h2, h3 {
+			font-size: 15px;
+		}
+	}
+
+
+	.banner-button {
+		left: 20px;
+		bottom: 20px;
+		margin-left: 0;
+	}
+
+}
+/*
+===============================================================
+LEADERBOARD Banner: w728 h90 image: w360 h90
+===============================================================
+*/
+#leaderboard {
+
+	$banner-width: 728px;
+	$banner-height: 90px;
+	$title-area: 140px;
+
+	$image-container: 310px;
+	$logo-area: 148px;
+	$format: 'horizontal';
+	@include constructBanner($format, $banner-width, $banner-height);
+	@include addFlexFixed('title-area', $format, $title-area);
+	@include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexGrow('subtitle-container', $format, 118px, 118px, 158px);
+	//@include addFlexFixed('button-area', $format, 30px);
+	@include addFlexGrow('logo-area', $format, auto, 80px, 120px);
+	@include order('title-area','banner-image','subtitle-container','button-area', 'logo-area');
+
+	.title-area {
+		h1 {
+			font-size: 15px;
+			text-align: left;
+			line-height: 1.1;
+
+		}
+	}
+
+	.subtitle-container {
+		display: table;
+		h2, h3 {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 14px;
+		}
+	}
+	.banner-button {
+		left: $title-area + 15px;
+		margin-left: 0;
+		bottom: 10px;
+	}
+
+	.logo-area {
+		min-width: 108px;
+
+	}
+	.company-logo {
+		padding: 4px;
+	}
+}
+/*
+===============================================================
+LARGE MOBILE Banner: w320 h100 image: w114 h100
+===============================================================
+*/
+#large-mobile {
+
+	$banner-width: 320px;
+	$banner-height: 100px;
+	$title-area: 100px;
+	$subtitle-container: 106px;
+	$image-container: 114px;
+	$logo-area: 106px;
+	$format: 'horizontal';
+	@include constructBanner($format, $banner-width, $banner-height);
+	@include addFlexGrow('flex-column', $format, auto, $title-area, $title-area);
+	@include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexFixed('title-area', $format, $title-area);
+	@include addFlexFixed('logo-area', $format, $logo-area);
+
+	.title-area {
+		h1 {
+			text-align: left;
+			font-size: 14px;
+			line-height: 1.1;
+		}
+	}
+
+	.logo-area {
+		.company-logo {
+			max-width: 40%;
+		}
+	}
+
+	.banner-button,
+ 	.subtitle-container {
+		display: none;
+	}
+
+}
+/*
+===============================================================
+NETBOARD Banner: w580 h400 image: w580 h185
+===============================================================
+*/
+#netboard {
+
+	$banner-width: 580px;
+	$banner-height: 400px;
+	$title-area: 100px;
+	$subtitle-container: 'flex';
+	$image-container: 185px;
+	$logo-area: 115px;
+	$format: 'vertical';
+	//@include banner-vertical-structure($banner-width, $banner-height, $title-area, $image-container, $subtitle-container, $logo-area, $banner-width / 2);
+	// @include logo-position($banner-width, $logo-area);
+	@include constructBanner($format, $banner-width, $banner-height);
+	@include addFlexFixed('title-area', $format, $title-area);
+	@include addFlexFixed('banner-image', $format, $image-container);
+	@include addFlexFixed('flex-row', $format, $logo-area);
+	$format: 'horizontal';
+	@include addFlexGrow('subtitle-container', $format, 50%, 50%, 60%);
+	@include addFlexGrow('logo-area', $format, 50%, 40%, 40%);
+	@include order('title-area','banner-image','flex-row','subtitle-container', 'logo-area');
+
+	.title-area {
+		h1 {
+			font-size: 28px;
+			text-align: left;
+			line-height: 1.1;
+		}
+	}
+
+	.subtitle-container {
+		width: auto;
+
+		.table-cell {
+    	vertical-align: top;
+		}
+		h2,
+		h3 {
+			text-align: left;
+			font-size: 18px;
+			line-height: 1.2;
+			margin-bottom: 3px;
+		}
+	}
+
+	.banner-button {
+		left: 15px;
+		bottom: 15px;
+		margin-left: 0;
+	}
+
+	.logo-area {
+		min-width: 150px;
+		.company-logo {
+			max-width: 90%;
+		}
+		.table-cell {
+			vertical-align: bottom;
+			padding-bottom: 15px;
+		}
+	}
+
+}

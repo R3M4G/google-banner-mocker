@@ -1,0 +1,18 @@
+    @font-face{
+        font-family:"PF DinText W01 Light";
+        src:url("Fonts/5c8937e3-1be5-4783-8945-a7fb47ea2686.eot?#iefix");
+        src:url("Fonts/5c8937e3-1be5-4783-8945-a7fb47ea2686.eot?#iefix") format("eot"),
+			url("Fonts/bf3ef48c-923f-4352-80f7-c7ade7e574ad.woff2") format("woff2"),
+			url("Fonts/2142edef-2fe7-4c85-bbaa-25b17c4c91c5.woff") format("woff"),
+			url("Fonts/b75b7312-679f-46cf-ad85-dc5e22985998.ttf") format("truetype"),
+			url("Fonts/e4cd9354-1006-489c-90ec-f627f94284e2.svg#e4cd9354-1006-489c-90ec-f627f94284e2") format("svg");
+    }
+    @font-face{
+        font-family:"PF DinText W01 Medium";
+        src:url("Fonts/dcc333e0-c41b-47ab-96af-39fb9f33eb6c.eot?#iefix");
+        src:url("Fonts/dcc333e0-c41b-47ab-96af-39fb9f33eb6c.eot?#iefix") format("eot"),
+			url("Fonts/3e2f3f3f-99f8-4aa2-9587-c2f608ab2bd0.woff2") format("woff2"),
+			url("Fonts/029127ca-1ce7-49f1-ba40-b581b7fc68b0.woff") format("woff"),
+			url("Fonts/289a83c5-555d-4279-98b9-6f3a0f24c87e.ttf") format("truetype"),
+			url("Fonts/102eb4ab-c0f8-4576-9a27-3b2aa6f86518.svg#102eb4ab-c0f8-4576-9a27-3b2aa6f86518") format("svg");
+    }

@@ -1,0 +1,18 @@
+    @font-face{
+        font-family:"Neuzeit Grotesk";
+        src:url("Fonts/76cc538f-bd82-4bd9-a19c-d28eb529ad11.eot?#iefix");
+        src:url("Fonts/76cc538f-bd82-4bd9-a19c-d28eb529ad11.eot?#iefix") format("eot"),
+        url("Fonts/d33f718f-1aa2-43db-ad60-7d79aa87de0a.woff2") format("woff2"),
+        url("Fonts/2d76f703-cb26-46a0-954a-53cc641b9b3b.woff") format("woff"),
+        url("Fonts/3b12e571-5103-4d94-9ba8-2dc8e8ff6550.ttf") format("truetype"),
+        url("Fonts/ced3da05-8be1-45e3-b183-0b0df57501e0.svg#ced3da05-8be1-45e3-b183-0b0df57501e0") format("svg");
+    }
+    @font-face{
+        font-family:"Neuzeit Grotesk Bold";
+        src:url("Fonts/66182542-0bb8-41e7-94b8-f45d24bea18d.eot?#iefix");
+        src:url("Fonts/66182542-0bb8-41e7-94b8-f45d24bea18d.eot?#iefix") format("eot"),
+        url("Fonts/8dfba670-079e-4879-8b0a-8d079ab7c067.woff2") format("woff2"),
+        url("Fonts/218401dc-d400-4482-8c9b-0527059f7559.woff") format("woff"),
+        url("Fonts/ace900f9-272b-4efa-88b0-6f2b1adc0f41.ttf") format("truetype"),
+        url("Fonts/eeb8e139-b0e6-40d3-820c-0011bcf71e43.svg#eeb8e139-b0e6-40d3-820c-0011bcf71e43") format("svg");
+    }

@@ -1,0 +1,297 @@
+/* Variables */
+
+$icon-font-path: 'assets/fonts/';
+
+$logoVertical: true;
+
+
+// $primaryFont: 'franklingothic-book';
+// $secondaryFont: 'franklingothic-demi';
+
+// haart 3232
+// darlows 3238
+// chewton 3244
+// haybrook 3247
+// felicity 3250
+
+$client: 'erhverv';
+$format: 'vertical'; // Majority
+$primaryFont: 'franklingothic-book';
+$secondaryFont: 'franklingothic-demi';
+
+$primaryColor: '';
+$secondaryColor: '';
+$thirdColor: '';
+$fourthColor: '';
+
+$primaryBg: '';
+$secondaryBg: '';
+$imageContainerBg: '';
+
+$buttonBg: '';
+$buttonBorderColor: '';
+$buttonTextColor: '';
+$buttonBorderRadius: '';
+$buttonPadding: '';
+$buttonPosition: '';
+$title-transform: '';
+
+$primaryBgColor: '';
+$primaryFontColor: '';
+
+$secondaryBgColor: '';
+$secondaryFontColor: '';
+
+$logo-width: 147px;
+$logo-height: 100px;
+
+$font-size-xs: 8px;
+$font-size-s: 12px;
+$font-size-md: 18px;
+$font-size-l: 22px;
+$font-size-xl: 28px;
+
+@if $client == 'erhverv' {
+    $primaryFont: 'franklingothic-book';
+    $secondaryFont: 'franklingothic-demi';
+
+    $primaryColor: #CFDDE5; // blue
+    $secondaryColor: #05305B; // darkblue
+    $thirdColor: #D1D3D4; // grey
+    $fourthColor: #ffffff; // white
+
+    $buttonBorderColor: $thirdColor;
+    $buttonTextColor: $primaryBg;
+    $buttonBorderRadius: 20px;
+    $buttonPadding: 0px;
+    $buttonPosition: right;
+    $title-transform: none;
+}
+//
+// @if $client == 'clyde' {
+//     $primaryFont: 'DinText';
+//
+//     $primaryColor: #c7cb6a;
+//     $secondaryColor: #a8c4e2;
+//     $thirdColor: rgb(000,043,054);
+//
+//     $primaryBg: #4d4d4d;
+//     $secondaryBg: white;
+//     $imageContainerBg: #e4eae6;
+//
+//     $buttonBg: $primaryColor; // Marble;
+//     $buttonBorderColor: white;
+//     $buttonTextColor: $primaryBg;
+//     $buttonBorderRadius: 20px;
+//     $buttonPadding: 0px;
+//     $buttonPosition: right;
+//     $title-transform: none;
+//
+//     $primaryBgColor: #eae4da; // Marble
+//     $primaryFontColor: #143055; // Navy
+//
+//     $secondaryBgColor: #002244; // Navy
+//     $secondaryFontColor: #eae4da; // Marble
+// }
+// @if $client == 'savills' {
+//     $primaryFont: 'Helvetica Neue';
+//
+//     $primaryColor: #eae4da;
+//     $secondaryColor: #a8c4e2;
+//     $thirdColor: rgb(000,043,054);
+//
+//     $primaryBg: #eae4da;
+//     $secondaryBg: #002244;
+//     $imageContainerBg: #e4eae6;
+//
+//     $buttonBg: #717b9c; // Marble;
+//     $buttonBorderColor: white;
+//     $buttonTextColor: #c7cfe4;
+//     $buttonBorderRadius: 20px;
+//     $buttonPadding: 0px;
+//     $buttonPosition: right;
+//     $title-transform: none;
+//
+//     $primaryBgColor: #eae4da; // Marble
+//     $primaryFontColor: #143055; // Navy
+//
+//     $secondaryBgColor: #002244; // Navy
+//     $secondaryFontColor: #eae4da; // Marble
+// }
+// @if $client == 'chewton' {
+//
+//     $primaryFont: 'Museo Sans';
+//
+//     $primaryColor: white;
+//     $secondaryColor: rgb(128, 189, 038);
+//     $thirdColor: rgb(000,043,054);
+//
+//     $primaryBg: $thirdColor;
+//     $secondaryBg: white;
+//     $imageContainerBg: #e4eae6;
+//
+//     $buttonBg: $secondaryColor;
+//     $buttonBorderColor: white;
+//     $buttonTextColor: $thirdColor;
+//     $buttonBorderRadius: 20px;
+//     $buttonPadding: 0px;
+//     $buttonPosition: right;
+//     $title-transform: none;
+//
+// }
+//
+// @if $client == 'haart' {
+//
+//     $primaryFont: 'Museo Sans';
+//
+//     $primaryColor: rgb(236,0,140);
+//     $secondaryColor: rgb(64, 22, 99);
+//     $thirdColor: rgb( 145, 145, 149);
+//
+//     $primaryBg: #f1f1f1;
+//     $secondaryBg: white;
+//     $imageContainerBg: #e4eae6;
+//
+//     $buttonBg: $secondaryColor;
+//     $buttonBorderColor: white;
+//     $buttonTextColor: white;
+//     $buttonBorderRadius: 20px;
+//     $buttonPadding: 0px;
+//     $buttonPosition: right;
+//     $title-transform: uppercase;
+//     $logo-max-width: 66%;
+// }
+// @if $client == 'haybrook' {
+//
+//     $primaryFont: 'Museo Sans';
+//
+//     $primaryColor: white;
+//     $secondaryColor: rgb(64, 22, 99);
+//     $thirdColor: rgb( 80, 80, 80);
+//
+//     $primaryBg: #004176;
+//     $secondaryBg: white;
+//     $imageContainerBg: #e4eae6;
+//
+//     $buttonBg: rgb(229,56,37);
+//     $buttonBorderColor: white;
+//     $buttonTextColor: white;
+//     $buttonBorderRadius: 20px;
+//     $buttonPadding: 0px;
+//     $buttonPosition: right;
+//
+// }
+// @if $client == 'darlows' {
+//
+//     $primaryFont: 'Museo Sans';
+//
+//     $primaryColor: white;
+//     $secondaryColor: rgb(64, 22, 99);
+//     $thirdColor: rgb( 80, 80, 80);
+//
+//     $primaryBg: rgb(000,062,126);
+//     $secondaryBg: white;
+//     $imageContainerBg: #e4eae6;
+//
+//     $buttonBg: #ffcc00;
+//     $buttonBorderColor: white;
+//     $buttonTextColor: #1b2777;
+//     $buttonBorderRadius: 20px;
+//     $buttonPadding: 0px;
+//     $buttonPosition: right;
+//
+// }
+// @if $client == 'felicity' {
+//
+//     $primaryFont: 'Neuzeit Grotesk';
+//
+//     $primaryColor: white;
+//     $secondaryColor: rgb(64, 22, 99);
+//     $thirdColor: rgb( 80, 80, 80);
+//
+//     $primaryBg: #1e152a;
+//     $secondaryBg: white;
+//     $imageContainerBg: #e4eae6;
+//
+//     $buttonBg: #58baaa;
+//     $buttonBorderColor: white;
+//     $buttonTextColor: white;
+//     $buttonBorderRadius: 20px;
+//     $buttonPadding: 0px;
+//     $buttonPosition: right;
+//
+//     $smallFont: 12px;
+//     $normalFont: 14px;
+//     $bigFont: 16px;
+//
+// }
+// $font-size-small:
+// $font-size-medium:
+// $font-size-big:
+
+$padding_small: 6px;
+$padding_medium: 12px;
+$padding_big: 24px;
+//
+// $img-skyscraper : "/assets/img/banner/erhverv/skyscraperVERTICAL.jpg";
+// $img-wide-skyscraper : "/assets/img/banner/erhverv/wide_skyscraperVERTICAL.jpg";
+// $img-half-page : "/assets/img/banner/erhverv/half-pageSQUARE.jpg";
+// $img-vertical-rectangle : "/assets/img/banner/erhverv/vertical_rectangleSQUARE.jpg";
+// $img-small-square : "/assets/img/banner/erhverv/small_squareHORIZONTAL.jpg";
+// $img-portrait : "/assets/img/banner/erhverv/portraitVERTICAL.jpg";
+// $img-mobile-leaderboard : "/assets/img/banner/erhverv/mobile_leaderboardHORIZONTAL.jpg";
+// $img-banner : "/assets/img/banner/erhverv/bannerHORIZONTAL.jpg";
+// $img-square : "/assets/img/banner/erhverv/squareHORIZONTAL.jpg";
+// $img-large-rectangle : "/assets/img/banner/erhverv/large_rectangleHORIZONTAL.jpg";
+// $img-inline-rectangle : "/assets/img/banner/erhverv/inline_rectangleHORIZONTAL.jpg";
+// $img-large-leaderboard : "/assets/img/banner/erhverv/large_leaderboardHORIZONTAL.jpg";
+// $img-billboard : "/assets/img/banner/erhverv/billboardHORIZONTAL.jpg";
+// $img-leaderboard : "/assets/img/banner/erhverv/large_leaderboardHORIZONTAL.jpg";
+// $img-large-mobile : "/assets/img/banner/erhverv/large_mobile_bannerSQUARE.jpg";
+// $img-netboard : "/assets/img/banner/erhverv/netboardHORIZONTAL.jpg";
+//
+// #skyscraper .banner-image { background-image: url($img-skyscraper);}
+// #wide-skyscraper .banner-image { background-image: url($img-wide-skyscraper);}
+// #half-page .banner-image { background-image: url($img-half-page);}
+// #vertical-rectangle .banner-image { background-image: url($img-vertical-rectangle);}
+// #small-square .banner-image { background-image: url($img-small-square);}
+// #portrait .banner-image { background-image: url($img-portrait);}
+// #mobile-leaderboard .banner-image { background-image: url($img-mobile-leaderboard);}
+// #banner .banner-image { background-image: url($img-banner);}
+// #square .banner-image { background-image: url($img-square);}
+// #large-rectangle .banner-image { background-image: url($img-large-rectangle);}
+// #inline-rectangle .banner-image { background-image: url($img-inline-rectangle);}
+// #large-leaderboard .banner-image { background-image: url($img-large-leaderboard);}
+// #leaderboard .banner-image { background-image: url($img-leaderboard);}
+// #billboard .banner-image { background-image: url($img-billboard);}
+// #large-mobile .banner-image { background-image: url($img-large-mobile);}
+// #netboard .banner-image { background-image: url($img-netboard);}
+
+/* Media queries */
+
+$minimal: "only screen and (max-width : 320px)";
+$mobile: "only screen and (max-width : 460px)";
+$tablet: "only screen and (max-width : 760px)";
+$desktop: "only screen and (max-width : 960px)";
+
+.mobile { display: none; }
+.tablet { display: none; }
+.desktop{ display: block; }
+.desktop-table{ display: table; }
+
+@media #{$tablet} {
+
+    .mobile, .mobile-table {   display: none; }
+    .desktop, .desktop-table {   display: none; }
+    .tablet {   display: block; }
+    .tablet-table {   display: table; }
+
+}
+@media #{$mobile} {
+
+    .tablet, .tablet-table { display: none; }
+    .desktop, .desktop-table { display: none; }
+    .mobile { display: block; }
+    .mobile-table { display: table; }
+
+}

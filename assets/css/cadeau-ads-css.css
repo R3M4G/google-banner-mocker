@@ -1,0 +1,2283 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+.pseudo-button {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    background-color: rgb(255, 245, 113) !important;
+    padding: 0 !important;
+    border-color: rgb(255, 245, 113) !important;
+}
+
+@font-face{
+    font-family:"FrutigerLTW01-45Light";
+    src:url("/themes/cct2015/fonts/frutiger2/7d3671fc-8c26-459c-98e1-997c4f6c8c93.eot?#iefix");
+    src:url("/themes/cct2015/fonts/frutiger2/7d3671fc-8c26-459c-98e1-997c4f6c8c93.eot?#iefix") format("eot"),
+    url("/themes/cct2015/fonts/frutiger2/4fb89ed5-baf5-425f-aba4-46e8c2c3aabe.woff2") format("woff2"),
+    url("/themes/cct2015/fonts/frutiger2/2a004a53-ac5c-43b3-9eeb-9f74ae4c1609.woff") format("woff"),
+    url("/themes/cct2015/fonts/frutiger2/74d53f3b-1683-4d5a-a556-e13f6553cdf0.ttf") format("truetype"),
+    url("/themes/cct2015/fonts/frutiger2/3f5a5b87-e71e-4544-be0c-da4daa132710.svg#3f5a5b87-e71e-4544-be0c-da4daa132710") format("svg");
+}
+@font-face{
+    font-family:"FrutigerLTW01-46LightIt";
+    src:url("/themes/cct2015/fonts/frutiger2/072713ba-cb3a-4522-8f3b-b120f8eae10f.eot?#iefix");
+    src:url("/themes/cct2015/fonts/frutiger2/072713ba-cb3a-4522-8f3b-b120f8eae10f.eot?#iefix") format("eot"),
+    url("/themes/cct2015/fonts/frutiger2/dda818d0-9f7a-4574-8d17-8e3546cb04fb.woff2") format("woff2"),
+    url("/themes/cct2015/fonts/frutiger2/8259f047-a5d2-40a0-a98c-1c24f0316b08.woff") format("woff"),
+    url("/themes/cct2015/fonts/frutiger2/1078a920-3def-4194-ba69-46751fb9af38.ttf") format("truetype"),
+    url("/themes/cct2015/fonts/frutiger2/4c72fb1e-e1b0-4a18-91cc-5dbe2faaf2a3.svg#4c72fb1e-e1b0-4a18-91cc-5dbe2faaf2a3") format("svg");
+}
+@font-face{
+    font-family:"FrutigerLTW01-55Roman";
+    src:url("/themes/cct2015/fonts/frutiger2/af97a512-f55a-4f61-b2ce-659c883930fc.eot?#iefix");
+    src:url("/themes/cct2015/fonts/frutiger2/af97a512-f55a-4f61-b2ce-659c883930fc.eot?#iefix") format("eot"),
+    url("/themes/cct2015/fonts/frutiger2/9b1fae67-8764-448a-a926-54b09bd0b06b.woff2") format("woff2"),
+    url("/themes/cct2015/fonts/frutiger2/3fbbd6b1-cfa7-4ff0-97ea-af1b2c489f15.woff") format("woff"),
+    url("/themes/cct2015/fonts/frutiger2/076311f8-a01b-4389-a5eb-334a62e62d45.ttf") format("truetype"),
+    url("/themes/cct2015/fonts/frutiger2/c59a36ab-4ef8-4ee1-a2f8-48aa79d4f877.svg#c59a36ab-4ef8-4ee1-a2f8-48aa79d4f877") format("svg");
+}
+@font-face{
+    font-family:"FrutigerLTW01-56Italic";
+    src:url("/themes/cct2015/fonts/frutiger2/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix");
+    src:url("/themes/cct2015/fonts/frutiger2/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix") format("eot"),
+    url("/themes/cct2015/fonts/frutiger2/a6f5a1fe-91d0-4bde-bf50-4fc4e2d24f7e.woff2") format("woff2"),
+    url("/themes/cct2015/fonts/frutiger2/e2ade8a9-bd48-45e7-95e6-9dc917ba4f74.woff") format("woff"),
+    url("/themes/cct2015/fonts/frutiger2/19fe9614-8825-4e7d-b8c3-230d2561e0e2.ttf") format("truetype"),
+    url("/themes/cct2015/fonts/frutiger2/c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3.svg#c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3") format("svg");
+}
+@font-face{
+    font-family:"Frutiger LT W01_65 Bold";
+    src:url("/themes/cct2015/fonts/frutiger2/fbd7c0fb-f004-4e83-81d2-1d400413a873.eot?#iefix");
+    src:url("/themes/cct2015/fonts/frutiger2/fbd7c0fb-f004-4e83-81d2-1d400413a873.eot?#iefix") format("eot"),
+    url("/themes/cct2015/fonts/frutiger2/6e7f04cb-3b30-43a5-b79d-25b4c1178700.woff2") format("woff2"),
+    url("/themes/cct2015/fonts/frutiger2/9aa32a81-1124-4c43-b3db-15bfb1f7aed2.woff") format("woff"),
+    url("/themes/cct2015/fonts/frutiger2/6faffbf4-f8e8-4817-b24b-a390e166be7e.ttf") format("truetype"),
+    url("/themes/cct2015/fonts/frutiger2/fc09de64-de25-425e-90dc-a0cae29b02c4.svg#fc09de64-de25-425e-90dc-a0cae29b02c4") format("svg");
+}
+@font-face{
+    font-family:"FrutigerLTW01-66BoldIta";
+    src:url("/themes/cct2015/fonts/frutiger2/f334dc11-1de8-4ae2-9c2a-a1cfa665263b.eot?#iefix");
+    src:url("/themes/cct2015/fonts/frutiger2/f334dc11-1de8-4ae2-9c2a-a1cfa665263b.eot?#iefix") format("eot"),
+    url("/themes/cct2015/fonts/frutiger2/c3eb6646-2557-4ced-8a71-fd9c6eb83c59.woff2") format("woff2"),
+    url("/themes/cct2015/fonts/frutiger2/f74530f5-a39c-47e3-97d9-6821fc4df8c0.woff") format("woff"),
+    url("/themes/cct2015/fonts/frutiger2/aa626e7f-57dd-4084-9486-3eeb921333c0.ttf") format("truetype"),
+    url("/themes/cct2015/fonts/frutiger2/8f91ebb0-2b00-4a50-baa9-865a6502384e.svg#8f91ebb0-2b00-4a50-baa9-865a6502384e") format("svg");
+}
+@font-face{
+    font-family:"FrutigerLTW01-75Black";
+    src:url("/themes/cct2015/fonts/frutiger2/9b0d3be7-4ec5-4a72-8cc6-89b8b0f0b193.eot?#iefix");
+    src:url("/themes/cct2015/fonts/frutiger2/9b0d3be7-4ec5-4a72-8cc6-89b8b0f0b193.eot?#iefix") format("eot"),
+    url("/themes/cct2015/fonts/frutiger2/a11b4e58-71a2-4f70-bda7-242c1305efd0.woff2") format("woff2"),
+    url("/themes/cct2015/fonts/frutiger2/70ad2f15-9e1e-4a42-8fdc-30327ef510c3.woff") format("woff"),
+    url("/themes/cct2015/fonts/frutiger2/ed897ec7-c1b8-4bd4-9d2a-0a7b09661bdc.ttf") format("truetype"),
+    url("/themes/cct2015/fonts/frutiger2/63e3258b-8e81-4153-ba11-ab8f4b2aa7a3.svg#63e3258b-8e81-4153-ba11-ab8f4b2aa7a3") format("svg");
+}
+@font-face{
+    font-family:"FrutigerLTW01-76BlackIt";
+    src:url("/themes/cct2015/fonts/frutiger2/e7f1c490-48bc-447b-ad11-6e85dd1429be.eot?#iefix");
+    src:url("/themes/cct2015/fonts/frutiger2/e7f1c490-48bc-447b-ad11-6e85dd1429be.eot?#iefix") format("eot"),
+    url("/themes/cct2015/fonts/frutiger2/0b1dd2fe-03a8-4506-9e9b-60a88abf8709.woff2") format("woff2"),
+    url("/themes/cct2015/fonts/frutiger2/eb21cbbe-83da-4d1d-bf54-e60fa03381e2.woff") format("woff"),
+    url("/themes/cct2015/fonts/frutiger2/0a0bb96a-4e52-4940-9120-1cbfe63deb29.ttf") format("truetype"),
+    url("/themes/cct2015/fonts/frutiger2/6ce161bf-e26e-4c38-b3d9-0abfcbfc2c6d.svg#6ce161bf-e26e-4c38-b3d9-0abfcbfc2c6d") format("svg");
+}
+
+
+
+
+
+
+
+
+
+
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+    font-size: 1em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+    overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+    overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+    line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+    font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+/*
+----------------------------------------
+Site:		tool.cct-marketing.com
+Description:	Banner Ads CSS - CSS for the
+		Various banner advert sizes
+Author:		Colum Keating
+Created:        02/09/2015
+Updated:	05/10/2015
+Updated by:	Colum Keating
+                Vinicius Kienen
+Notes:
+----------------------------------------
+*/
+/*
+===============================================================
+Classes that are used in the GDN Banner creator in the
+CCT Software
+===============================================================
+*/
+
+/* Foundation properties for the classes in each banner type */
+.title-area {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(178, 179, 182, 0.34);
+    color: #3e3f41;
+    font-family: 'FrutigerLTW01-55Roman', Helvetica, Arial, sans-serif;
+}
+
+.note {
+    box-sizing: border-box;
+    padding: 3px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #F4F2E7;
+}
+
+.note2 {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.note2 .pseudo-button p {
+    padding: 0 8px;
+    border: 1px solid rgb(255, 245, 113) !important;
+    line-height: 24px;
+    box-sizing: border-box;
+    font-family: 'FrutigerLTW01-55Roman', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+
+
+    font-family:'FrutigerLTW01-45Light', Helvetica, Arial, sans-serif;
+}
+
+
+
+/* General spacing around the banner - this can be deleted from the markup or ammended as necessary */
+.spacing {
+    float: left;
+    margin: 30px 30px 10px 0;
+}
+
+/* FIXES SO THAT FLAT-UI-PRO DOES NOT OVERRIDE THE FONT DEFINITION */
+.title-area h1,
+.note h2,
+.note h3 {font-family: 'FrutigerLTW01-45Light', Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;/*
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  font-kerning: normal;*/}
+
+.note h3 {
+    color: #000000;
+}
+
+.title-area h1 {
+    font-family: 'FrutigerLTW01-55Roman', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;
+}
+/*
+===============================================================
+SKYSCRAPPER Banner: w120 h600 image: w120 h276
+===============================================================
+*/
+#skyscraper {
+    position: relative;
+    width: 120px;
+    height: 600px;
+    background-color: #fff;
+}
+
+#skyscraper * {
+    margin: 0
+}
+
+#skyscraper .title-area {
+    top: 0px;
+    left: 0;
+    width: 120px;
+    height: 130px;
+    padding: 20px 0;
+}
+
+#skyscraper .title-area h1 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+#skyscraper .img-container {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 120px;
+    height: 276px;
+    background-color: #CCCCCC;
+}
+
+#skyscraper .note {
+    position: absolute;
+    top: 406px;
+    left: 0;
+    width: 120px;
+    height: 70px;
+    padding: 12px 8px 0 8px;
+}
+
+#skyscraper .note h2 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#skyscraper .note h3 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+#skyscraper .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 134px;
+    text-align: center;
+}
+
+#skyscraper .note2 .pseudo-button {
+    margin: 40px auto 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: inline-block;
+    padding: 3px 6px;
+    height: auto;
+    width: auto;
+    float:none;
+    display: inline-block;
+}
+
+#skyscraper .note2 .company-logo {
+    box-sizing: border-box;
+    padding: 0;
+    width: auto;
+    height: 46px;
+    margin: 0 auto;
+    float: none;
+    display: block;
+}
+
+#skyscraper .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 1px;
+}
+
+/*
+===============================================================
+WIDE SKYSCRAPPER Banner: w160 h600 image: w160 h276
+===============================================================
+*/
+#wide-skyscraper {
+    position: relative;
+    width: 160px;
+    height: 600px;
+    background-color: #fff;
+}
+
+#wide-skyscraper * {
+    margin: 0
+}
+
+#wide-skyscraper .title-area {
+    top: 0px;
+    left: 0;
+    width: 160px;
+    height: 120px;
+    padding: 15px 8px;
+}
+
+#wide-skyscraper .title-area h1 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+#wide-skyscraper .img-container {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 160px;
+    height: 276px;
+    background-color: #CCCCCC;
+}
+
+#wide-skyscraper .note {
+    position: absolute;
+    top: 396px;
+    left: 0;
+    width: 160px;
+    height: 70px;
+    padding: 12px 8px 0 8px;
+}
+
+#wide-skyscraper .note h2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#wide-skyscraper .note h3 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+#wide-skyscraper .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 136px;
+    text-align: center;
+}
+
+#wide-skyscraper .note2 .pseudo-button {
+    margin: 30px auto 10px auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: inline-block;
+    padding: 3px 6px;
+    height: auto;
+    width: auto;
+}
+
+#wide-skyscraper .note2 .company-logo {
+    box-sizing: border-box;
+    padding: 0;
+    width: auto;
+    height: 60px;
+    margin: 0 auto;
+    float: none;
+    display: block;
+    margin-top: -10px;
+}
+
+#wide-skyscraper .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    /* padding: 0; */
+}
+
+/*
+===============================================================
+HALF PAGE Banner: w300 h600 image: w300 h276
+===============================================================
+*/
+#half-page {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: #fff;
+}
+
+#half-page * {
+    margin: 0
+}
+
+#half-page .title-area {
+    top: 0px;
+    left: 0;
+    padding: 15px;
+    width: 300px;
+    height: 120px;
+}
+
+#half-page .title-area h1 {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+}
+
+#half-page .img-container {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 300px;
+    height: 276px;
+    background-color: #CCCCCC;
+}
+
+#half-page .note {
+    position: absolute;
+    top: 396px;
+    left: 0;
+    width: 300px;
+    height: 64px;
+    padding: 12px 8px 0 8px;
+}
+
+#half-page .note h2 {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+#half-page .note h3 {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 1.1;
+}
+
+#half-page .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 150px;
+    text-align:center;
+}
+
+#half-page .note2 .pseudo-button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: inline-block;
+    padding: 0;
+    height: auto;
+    width: auto;
+    margin: 20px auto 10px auto;
+}
+
+#half-page .note2 .company-logo {
+    display: block;
+    float: none;
+    margin: 0 auto 0 auto;
+    width: auto;
+    height: 90px;
+    padding: 4px;
+    margin-top: -15px;
+}
+
+#half-page .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    /* padding: 0; */
+}
+
+/*
+===============================================================
+VERTICAL RECTANGLE Banner: w240 h400 image: w240 h168
+===============================================================
+*/
+#vertical-rectangle {
+    position: relative;
+    width: 240px;
+    height: 400px;
+    background-color: #fff;
+}
+
+#vertical-rectangle * {
+    margin: 0
+}
+
+#vertical-rectangle .title-area {
+    top: 0px;
+    left: 0;
+    padding: 12px;
+    width: 240px;
+    height: 105px;
+}
+
+#vertical-rectangle .title-area h1 {
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+#vertical-rectangle .img-container {
+    position: absolute;
+    top: 105px;
+    left: 0;
+    width: 240px;
+    height: 168px;
+    background-color: #CCCCCC;
+}
+
+#vertical-rectangle .note {
+    position: absolute;
+    top: 262px;
+    left: 0;
+    width: 240px;
+    height: 63px;
+    padding: 12px 8px 0 8px;
+}
+
+#vertical-rectangle .note h2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#vertical-rectangle .note h3 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#vertical-rectangle .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    height: 76px;
+}
+
+#vertical-rectangle .note2 .pseudo-button {
+    float: none;
+    margin: 34px 10px 5px 14px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: -135px;
+    right: 2px;
+    background-color: rgb(255, 245, 113) !important;
+    /* padding: 3px 8px !important; */
+}
+
+#vertical-rectangle .note2 .company-logo {
+    box-sizing: border-box;
+    margin: 0;
+    width: auto;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: -15px;
+}
+
+#vertical-rectangle .note2 .pseudo-button p {
+    position: relative;
+    color: #231F20 !important;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    /* padding: 0; */
+}
+
+/*
+===============================================================
+SMALL SQUARE Banner: w200 h200 image: w200 h66
+===============================================================
+*/
+#small-square {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+
+#small-square * {
+    margin: 0
+}
+
+#small-square .title-area {
+    top: 0px;
+    left: 0;
+    padding: 6px;
+    width: 200px;
+    height: 58px;
+}
+
+#small-square .title-area h1 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+}
+
+#small-square .img-container {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 200px;
+    height: 58px;
+    background-color: #CCCCCC;
+}
+
+#small-square .note {
+    position: absolute;
+    top: 123px;
+    left: 0;
+    width: 200px;
+    height: 40px;
+    padding: 6px 3px 0 3px;
+    z-index: 9;
+}
+
+#small-square .note h2 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+#small-square .note h3 {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1;
+}
+
+#small-square .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 59px;
+}
+
+#small-square .note2 .pseudo-button {
+    margin: 15px 10px 5px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100px;
+    height: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#small-square .note2 .company-logo {
+    float: none;
+    box-sizing: border-box;
+    margin: 10px auto;
+    width: auto;
+    height: 50px;
+    display: block;
+    margin-top: 5px;
+}
+
+#small-square .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/*
+===============================================================
+PORTRAIT Banner: w300 h1050 image: w300 h558
+===============================================================
+*/
+#portrait {
+    position: relative;
+    width: 300px;
+    height: 1050px;
+    background-color: #fff;
+}
+
+#portrait * {
+    margin: 0
+}
+
+#portrait .title-area {
+    top: 0px;
+    left: 0;
+    padding: 35px 15px;
+    width: 300px;
+    height: 185px;
+    text-align: center;
+}
+
+#portrait .title-area h1 {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+#portrait .img-container {
+    position: absolute;
+    top: 185px;
+    left: 0;
+    width: 300px;
+    height: 558px;
+    background-color: #CCCCCC;
+}
+
+#portrait .note {
+    position: absolute;
+    top: 743px;
+    left: 0;
+    padding: 25px 15px 0 15px;
+    width: 300px;
+    height: 107px;
+}
+
+#portrait .note h2 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+#portrait .note h3 {
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+#portrait .note2 {
+    position: absolute;
+    top: 850px;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    text-align:center;
+}
+
+#portrait .note2 .pseudo-button {
+    margin: 25px auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display:inline-block;
+    float:none;
+    margin-top: 40px;
+}
+
+#portrait .note2 .company-logo {
+    display: block;
+    float: none;
+    margin: 0;
+    width: auto;
+    height: 100px;
+    padding: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 15px auto;
+    bottom: 8px;
+}
+
+#portrait .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    /* padding-top: 0; */
+    /* width: auto; */
+}
+
+/*
+===============================================================
+MOBILE LEADERBOARD Banner: w320 h50 image: w122 h50
+===============================================================
+*/
+#mobile-leaderboard {
+    position: relative;
+    width: 320px;
+    height: 50px;
+    background-color: #fff;
+}
+
+#mobile-leaderboard * {
+    margin: 0
+}
+
+#mobile-leaderboard .title-area {
+    top: 0px;
+    left: 0;
+    width: 116px;
+    padding: 6px 2px 6px 6px;
+    height: 50px;
+}
+
+#mobile-leaderboard .title-area h1 {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1;
+    text-align: left;
+    font-family: 'open-sans', Helvetica, Arial, sans-serif;
+}
+
+#mobile-leaderboard .img-container {
+    position: absolute;
+    top: 0px;
+    right: 84px;
+    width: 120px;
+    height: 50px;
+    background-color: #CCCCCC;
+}
+
+#mobile-leaderboard .note {
+    position: absolute;
+    top: 0;
+    left: 210px;
+    padding: 0;
+    width: 110px;
+    height: 0;
+}
+
+#mobile-leaderboard .note h2 {
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 1.2;
+}
+
+#mobile-leaderboard .note h3 {
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1;
+    display: none;
+}
+
+#mobile-leaderboard .note2 {
+    position: absolute;
+    top: 0;
+    right": 210px;;
+    width: 90px;
+;;height: 50px;;;
+;right: 0;;
+;;;;;;;width: 84px;;;;;;;;
+}
+
+#mobile-leaderboard .note2 .pseudo-button {
+    margin: 15px 10px 5px 10px;
+    height: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#mobile-leaderboard .note2 .company-logo {
+    box-sizing: border-box;
+    padding: 0;
+    width: auto;
+    height: 30px;
+    margin: 3px auto;
+    float: none;
+    display: block;
+}
+
+#mobile-leaderboard .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/*
+===============================================================
+BANNER Banner: w468 h60 image: w224 h60
+===============================================================
+*/
+#banner {
+    position: relative;
+    width: 468px;
+    height: 60px;
+    background-color: #fff;
+}
+
+#banner * {
+    margin: 0
+}
+
+#banner .title-area {
+    top: 0px;
+    left: 0;
+    padding: 6px 2px 6px 6px;
+    width: 125px;
+    height: 60px;
+}
+
+#banner .title-area h1 {
+    font-weight: normal;
+    font-size: 13.5px;
+    line-height: 1;
+    text-align: left;
+    font-family: 'open-sans', Helvetica, Arial, sans-serif;
+}
+
+#banner .img-container {
+    position: absolute;
+    top: 0;
+    left: 125px;
+    width: 225px;
+    height: 60px;
+}
+
+#banner .note {
+    position: absolute;
+    top: 0px;
+    left: 339px;
+    padding: 3px 3px 0 3px;
+    width: 129px;
+    height: 0px;
+    display: none;
+}
+
+#banner .note h2 {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+#banner .note h3 {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.1;
+    display: none;
+}
+
+#banner .note2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 118px;
+    height: 60px;
+}
+
+#banner .note2 .pseudo-button {
+    margin: 15px 10px 5px 10px;
+    height: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#banner .note2 .company-logo {
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: auto;
+    height: 45px;
+    float: none;
+    display: block;
+}
+
+#banner .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/*
+===============================================================
+SQUARE Banner: w250 h250 image: w250 h78
+===============================================================
+*/
+#square {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+}
+
+#square * {
+    margin: 0
+}
+
+#square .title-area {
+    top: 0px;
+    left: 0;
+    padding: 12px;
+    width: 250px;
+    height: 64px;
+}
+
+#square .title-area h1 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: left;
+}
+
+#square .img-container {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 250px;
+    height: 80px;
+    background-color: #CCCCCC;
+}
+
+#square .note {
+    position: absolute;
+    top: 142px;
+    left: 0;
+    width: 250px;
+    height: 45px;
+    padding: 10px;
+    z-index: 9;
+}
+
+#square .note h2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#square .note h3 {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.1;
+    text-align: left;
+}
+
+#square .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 73px;
+}
+
+#square .note2 .pseudo-button {
+    float: left;
+    margin: 32px 10px 5px 14px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#square .note2 .company-logo {
+    float: right;
+    box-sizing: border-box;
+    margin: 6px 12px;
+    width: auto;
+    height: 62px;
+    position: absolute;
+    bottom: 8px;
+    right: -5px;
+}
+
+#square .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    /* padding: 0; */
+}
+
+/*
+===============================================================
+LARGE RECTANGLE Banner: w336 h280 image: w336 h98
+===============================================================
+*/
+#large-rectangle {
+    position: relative;
+    width: 336px;
+    height: 280px;
+    background-color: #fff;
+}
+
+#large-rectangle * {
+    margin: 0
+}
+
+#large-rectangle .title-area {
+    top: 0px;
+    left: 0;
+    padding: 10px 15px;
+    width: 336px;
+    height: 73px;
+}
+
+#large-rectangle .title-area h1 {
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 1.1;
+}
+
+#large-rectangle .img-container {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 336px;
+    height: 98px;
+    background-color: #CCCCCC;
+}
+
+#large-rectangle .note {
+    position: absolute;
+    top: 171px;
+    left: 0;
+    padding: 8px 12px 0 12px;
+    width: 336px;
+    height: 40px;
+    z-index: 9;
+}
+
+#large-rectangle .note h2 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+#large-rectangle .note h3 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: left;
+}
+
+#large-rectangle .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 336px;
+    height: 79px;
+}
+
+#large-rectangle .note2 .pseudo-button {
+    float: left;
+    margin: 40px 10px 10px 14px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#large-rectangle .note2 .company-logo {
+    box-sizing: border-box;
+    margin: 0;
+    width: auto;
+    height: 75px;
+    position: absolute;
+    bottom: 12px;
+    right: 8px;
+}
+
+#large-rectangle .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    /* padding: 0; */
+}
+
+/*
+===============================================================
+INLINE RECTANGLE Banner: w300 h250 image: w300 h78
+===============================================================
+*/
+#inline-rectangle {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+}
+
+#inline-rectangle * {
+    margin: 0
+}
+
+#inline-rectangle .title-area {
+    top: 0px;
+    left: 0;
+    padding: 12px;
+    width: 300px;
+    height: 64px;
+}
+
+#inline-rectangle .title-area h1 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+#inline-rectangle .img-container {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 300px;
+    height: 75px;
+    background-color: #CCCCCC;
+}
+
+#inline-rectangle .note {
+    position: absolute;
+    top: 142px;
+    left: 0;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    z-index: 9;
+}
+
+#inline-rectangle .note h2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#inline-rectangle .note h3 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: left;
+    width: 70%;
+}
+
+#inline-rectangle .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 80px;
+}
+
+#inline-rectangle .note2 .pseudo-button {
+    float: left;
+    margin: 40px 10px 5px 14px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#inline-rectangle .note2 .company-logo {
+    float: right;
+    box-sizing: border-box;
+    margin: 2px 12px;
+    width: auto;
+    height: 62px;
+    position: absolute;
+    bottom: 8px;
+    right: -5px;
+}
+
+#inline-rectangle .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    /* padding: 0; */
+}
+
+/*
+===============================================================
+LARGE LEADERBOARD Banner: w970 h90 image: w434 h90
+===============================================================
+*/
+#large-leaderboard {
+    position: relative;
+    width: 970px;
+    height: 90px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#large-leaderboard * {
+    margin: 0
+}
+
+#large-leaderboard .title-area {
+    top: 0px;
+    left: 0;
+    padding: 10px 10px;
+    width: 290px;
+    height: 90px;
+}
+
+#large-leaderboard .title-area h1 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#large-leaderboard .img-container {
+    position: absolute;
+    top: 0px;
+    left: 290px;
+    width: 435px;
+    height: 90px;
+    background-color: #CCCCCC;
+}
+
+#large-leaderboard .note {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    padding: 0 3px 0 3px;
+    width: 260px;
+    height: 32px;
+    background-color: transparent;
+}
+
+#large-leaderboard .note h2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#large-leaderboard .note h3 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+    text-align: left;
+    margin-left: 8px;
+    color: #3e3f41;
+}
+
+#large-leaderboard .note2 {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 246px;
+    height: 90px;
+}
+
+#large-leaderboard .note2 .pseudo-button {
+    position: absolute;
+    bottom: -15px;
+    left: -435px;
+    float: left;
+    margin: 15px;
+    width: auto;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    background-color: rgb(255, 245, 113) !important;
+    /* padding: 3px 8px !important; */
+}
+
+#large-leaderboard .note2 .company-logo {
+    box-sizing: border-box;
+    margin: 0 auto 8px auto;
+    width: auto;
+    float: none;
+    display: block;
+    height: 78px;
+}
+
+#large-leaderboard .note2 .pseudo-button p {
+    position: relative;
+    color: #1F1C1D !important;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    /* padding-top: 0; */
+    /* line-height: 24px; */
+}
+
+/*
+===============================================================
+BILLBOARD Banner: w970 h250 image: w410 h250
+===============================================================
+*/
+#billboard {
+    position: relative;
+    width: 970px;
+    height: 250px;
+    background-color: #fff;
+}
+
+#billboard * {
+    margin: 0
+}
+
+#billboard .title-area {
+    top: 0px;
+    left: 0;
+    padding: 30px 10px 30px 15px;
+    width: 270px;
+    height: 250px;
+}
+
+#billboard .title-area h1 {
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 1.1;
+}
+
+#billboard .img-container {
+    position: absolute;
+    top: 0px;
+    left: 270px;
+    width: 410px;
+    height: 250px;
+    background-color: #ffffff;
+}
+
+#billboard .note {
+    position: absolute;
+    top: 0;
+    left: 680px;
+    padding: 20px 15px 0 15px;
+    width: 290px;
+    height: 125px;
+}
+
+#billboard .note h2 {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+#billboard .note h3 {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#billboard .note2 {
+    position: absolute;
+    top: 125px;
+    left: 680px;
+    width: 290px;
+    height: 125px;
+}
+
+#billboard .note2 .pseudo-button {
+    position: absolute;
+    top: 53px;
+    left: -680px;
+    float: left;
+    margin: 28px 18px;
+    width: auto;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#billboard .note2 .company-logo {
+    box-sizing: border-box;
+    margin: 0 auto 30px auto;
+    width: auto;
+    height: 110px;
+    float: none;
+    display: block;
+    padding: 4px;
+}
+
+#billboard .note2 .pseudo-button p {
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    /* padding-top: 0; */
+    /* line-height: 24px; */
+}
+
+/*
+===============================================================
+LEADERBOARD Banner: w728 h90 image: w360 h90
+===============================================================
+*/
+#leaderboard {
+    position: relative;
+    width: 728px;
+    height: 90px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+#leaderboard * {
+    margin: 0
+}
+
+#leaderboard .title-area {
+    top: 0px;
+    left: 0;
+    padding: 8px 8px 0 8px;
+    width: 230px;
+    height: 50px;
+}
+
+#leaderboard .title-area h1 {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.1;
+}
+
+#leaderboard .img-container {
+    position: absolute;
+    top: 0px;
+    right: 128px;
+    width: 370px;
+    height: 90px;
+    background-color: transparent;
+}
+
+#leaderboard .note {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 0px 6px 20px 4px;
+    width: 230px;
+    height: 46px;
+    background-color: #e5e5e6;
+    color: #3e3f41;
+}
+
+#leaderboard .note h2 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#leaderboard .note h3 {
+    font-weight: normal;
+    font-size: 14.5px;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 4px;
+    color: #3e3f41;
+}
+
+#leaderboard .note2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 138px;
+    height: 100%;
+}
+
+#leaderboard .note2 .pseudo-button {
+    position: absolute;
+    bottom: -8px;
+    left: -365px;
+    float: left;
+    margin: 15px;
+    width: auto;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    background-color: rgb(255, 245, 113) !important;
+    /* padding: 3px 8px !important; */
+}
+
+#leaderboard .note2 .company-logo {
+    box-sizing: border-box;
+    margin: 13px auto;
+    width: auto;
+    height: 55px;
+    float: none;
+    display: block;
+    top: -6px;
+    position: absolute;
+}
+
+#leaderboard .note2 .pseudo-button p {
+    position: relative;
+    color: #1F1C1D !important;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 0;
+    /* line-height: 24px; */
+}
+
+/*
+===============================================================
+LARGE MOBILE Banner: w320 h100 image: w114 h100
+===============================================================
+*/
+#large-mobile {
+    width: 320px;
+    height: 100px;
+    position: relative;
+    background-color: #fff;
+}
+
+#large-mobile * {
+    margin: 0
+}
+
+#large-mobile .title-area {
+    top: 0px;
+    left: 0;
+    padding: 10px 5px 10px 10px;
+    width: 205px;
+    height: 50px;
+    z-index: 9;
+}
+
+#large-mobile .title-area h1 {
+    font-size: 14.5px;
+    line-height: 1;
+    font-weight: normal;
+}
+
+#large-mobile .img-container {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 115px;
+    height: 100px;
+    background-color: #CCCCCC;
+}
+
+#large-mobile .note {
+    position: absolute;
+    top: 0;
+    left: 219px;
+    padding: 0;
+    width: 101px;
+    height: 50px;
+    background-color: transparent;
+}
+
+#large-mobile .note h2 {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+#large-mobile .note h3 {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.1;
+    display: none;
+}
+
+#large-mobile .note2 {
+    position: absolute;
+    bottom: 0;
+    left: 219px;
+    width: 101px;
+    height: 55px;
+}
+
+#large-mobile .note2 .pseudo-button {
+    position: absolute;
+    bottom: 7px;
+    left: -212px;
+    width: auto;
+    height: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    padding: 3px 6px;
+    display: none;
+}
+
+#large-mobile .note2 .company-logo {
+    box-sizing: border-box;
+    margin: 3px auto 4px auto;
+    width: auto;
+    height: 62px;
+    float: none;
+    display: block;
+    position: absolute;
+    top: -17px;
+    left: -214px;
+}
+
+#large-mobile .note2 .pseudo-button p {
+    position: relative;
+    color: #001652;
+    text-align: center;
+    font-weight: normal;
+    font-size: 11px;
+    padding-top: 0;
+}
+
+
+/*
+===============================================================
+NETBOARD Banner: w580 h400 image: w336 h98
+===============================================================
+*/
+#netboard {
+    position: relative;
+    width: 580px;
+    height: 400px;
+    background-color: #FFFFFF;
+}
+
+#netboard * {
+    margin: 0
+}
+
+#netboard .title-area {
+    top: 0px;
+    left: 0;
+    padding: 18px 28px 0 18px;
+    width: 580px;
+    height: 90px;
+}
+
+#netboard .title-area h1 {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1;
+    text-align: left;
+    width: 80%;
+}
+
+#netboard .img-container {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 580px;
+    height: 185px;
+    background-color: #ffffff;
+}
+
+#netboard .note {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    padding: 7px 280px 0 5px;
+    width: 580px;
+    height: 100px;
+}
+
+#netboard .note h2 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 3px;
+}
+
+#netboard .note h3 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 15px;
+    width: 80%;
+    color: #000000;
+}
+
+#netboard .note2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 580px;
+    height: 95px;
+}
+
+#netboard .note2 .pseudo-button {
+    float: left;
+    margin: 52px 20px;
+    width: auto;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#netboard .note2 .company-logo {
+    float: right;
+    box-sizing: border-box;
+    padding: 0 8px 8px 0;
+    width: auto;
+    height: 110px;
+    position: absolute;
+    top: -18px;
+    right: 0;
+}
+
+#netboard .note2 .pseudo-button p {
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    /* padding-top: 0; */
+    /* line-height: 24px; */
+}
+
+.pseudo-button p {
+    color: rgb(36, 32, 33) !important;
+    font-family:'FrutigerLTW01-45Light', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,1808 @@
+/*
+----------------------------------------
+Site:		tool.cct-marketing.com
+Description:	Banner Ads CSS - CSS for the
+		Various banner advert sizes
+Author:		Colum Keating
+Created:        02/09/2015
+Updated:	05/10/2015
+Updated by:	Colum Keating
+                Vinicius Kienen
+Notes:
+----------------------------------------
+*/
+/*
+===============================================================
+Classes that are used in the GDN Banner creator in the
+CCT Software
+===============================================================
+*/
+/* -------------------------------------------------------------------------*/
+/* Variables */
+/* Media queries */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+/* line 60, ../../sass/_variables.scss */
+.mobile {
+  display: none;
+}
+
+/* line 61, ../../sass/_variables.scss */
+.tablet {
+  display: none;
+}
+
+/* line 62, ../../sass/_variables.scss */
+.desktop {
+  display: block;
+}
+
+/* line 63, ../../sass/_variables.scss */
+.desktop-table {
+  display: table;
+}
+
+@media only screen and (max-width: 760px) {
+  /* line 67, ../../sass/_variables.scss */
+  .mobile, .mobile-table {
+    display: none;
+  }
+
+  /* line 68, ../../sass/_variables.scss */
+  .desktop, .desktop-table {
+    display: none;
+  }
+
+  /* line 69, ../../sass/_variables.scss */
+  .tablet {
+    display: block;
+  }
+
+  /* line 70, ../../sass/_variables.scss */
+  .tablet-table {
+    display: table;
+  }
+}
+@media only screen and (max-width: 460px) {
+  /* line 75, ../../sass/_variables.scss */
+  .tablet, .tablet-table {
+    display: none;
+  }
+
+  /* line 76, ../../sass/_variables.scss */
+  .desktop, .desktop-table {
+    display: none;
+  }
+
+  /* line 77, ../../sass/_variables.scss */
+  .mobile {
+    display: block;
+  }
+
+  /* line 78, ../../sass/_variables.scss */
+  .mobile-table {
+    display: table;
+  }
+}
+/* -------------------------------------------------------------------------*/
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../../sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../../sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../../sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../../sass/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../../sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, ../../sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, ../../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, ../../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, ../../sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, ../../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, ../../sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, ../../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, ../../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, ../../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, ../../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, ../../sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, ../../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, ../../sass/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, ../../sass/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, ../../sass/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, ../../sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, ../../sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, ../../sass/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, ../../sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, ../../sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, ../../sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, ../../sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, ../../sass/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, ../../sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, ../../sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, ../../sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, ../../sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, ../../sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, ../../sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, ../../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, ../../sass/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, ../../sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, ../../sass/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'franklingothic-book';
+  src: url("/assets/fonts/franklingothic/franklingothic-book-webfont.eot");
+  src: url("/assets/fonts/franklingothic/franklingothic-book-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/franklingothic/franklingothic-book-webfont.woff2") format("woff2"), url("/assets/fonts/franklingothic/franklingothic-book-webfont.woff") format("woff"), url("/assets/fonts/franklingothic/franklingothic-book-webfont.ttf") format("truetype"), url("/assets/fonts/franklingothic/franklingothic-book-webfont.svg#franklingothic-book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'franklingothic-demi';
+  src: url("/assets/fonts/franklingothic/franklingothic-demi-webfont.eot");
+  src: url("/assets/fonts/franklingothic/franklingothic-demi-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/franklingothic/franklingothic-demi-webfont.woff2") format("woff2"), url("/assets/fonts/franklingothic/franklingothic-demi-webfont.woff") format("woff"), url("/assets/fonts/franklingothic/franklingothic-demi-webfont.ttf") format("truetype"), url("/assets/fonts/franklingothic/franklingothic-demi-webfont.svg#franklingothic-demi") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Layout */
+/* Foundation properties for the classes in each banner type */
+/* line 2, ../../sass/_default.scss */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../../sass/_default.scss */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 15, ../../sass/_default.scss */
+.flex-column {
+  display: flex;
+  flex-flow: column;
+}
+
+/* line 20, ../../sass/_default.scss */
+.wrapper {
+  color: #4d4e4f;
+}
+/* line 23, ../../sass/_default.scss */
+.wrapper.vertical {
+  float: left;
+  margin: 30px 30px 10px 0;
+}
+/* line 27, ../../sass/_default.scss */
+.wrapper.horizontal {
+  display: block;
+  clear: both;
+}
+/* line 32, ../../sass/_default.scss */
+.wrapper .table-cell {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  padding: 4px;
+}
+/* line 40, ../../sass/_default.scss */
+.wrapper .table {
+  display: table;
+  height: 100%;
+}
+/* line 45, ../../sass/_default.scss */
+.wrapper > div {
+  position: relative;
+  overflow: hidden;
+  font-family: "Open Sans", "franklingothic-book", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 51, ../../sass/_default.scss */
+.wrapper > div h1, .wrapper > div h2, .wrapper > div h3 {
+  font-weight: 100;
+}
+/* line 56, ../../sass/_default.scss */
+.wrapper .title-area {
+  padding: 12px;
+  background-color: #e5e5e5;
+}
+/* line 60, ../../sass/_default.scss */
+.wrapper .title-area h1 {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Open Sans", "franklingothic-book", sans-serif;
+}
+/* line 69, ../../sass/_default.scss */
+.wrapper .subtitle-container {
+  padding: 2px;
+  background-color: white;
+  text-align: center;
+}
+/* line 73, ../../sass/_default.scss */
+.wrapper .subtitle-container h2,
+.wrapper .subtitle-container h3 {
+  font-size: 14px;
+  margin: 2px;
+  white-space: normal !important;
+  word-break: break-word !important;
+  font-family: "Open Sans", "franklingothic-book", sans-serif;
+  font-weight: normal;
+}
+/* line 84, ../../sass/_default.scss */
+.wrapper .logo-area {
+  background-color: white;
+  overflow: hidden;
+}
+/* line 92, ../../sass/_default.scss */
+.wrapper .banner-button {
+  width: 64px;
+  z-index: 10;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background-color: #fdf486;
+  height: 24px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -32px;
+}
+/* line 103, ../../sass/_default.scss */
+.wrapper .banner-button p {
+  margin: 0;
+  font-weight: 400;
+  position: relative;
+  color: #4d4e4f;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+/* line 116, ../../sass/_default.scss */
+.wrapper .banner-image {
+  background-color: #e4eae6;
+  background-repeat: no-repeat;
+}
+
+/*
+===============================================================
+SKYSCRAPPER Banner: w120 h600 image: w120 h276
+===============================================================
+*/
+/* line 7, ../../sass/_general-new.scss */
+#skyscraper {
+  width: 120px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#skyscraper .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 110px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#skyscraper .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 276px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#skyscraper .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#skyscraper .logo-area {
+  max-height: 120px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#skyscraper .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 20, ../../sass/_general-new.scss */
+#skyscraper .banner-image {
+  background-image: url("/assets/img/banner/skyscraperVERTICAL.jpg");
+}
+/* line 26, ../../sass/_general-new.scss */
+#skyscraper .title-area h1 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+/* line 33, ../../sass/_general-new.scss */
+#skyscraper .subtitle-container h3 {
+  padding: 12px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+}
+/* line 41, ../../sass/_general-new.scss */
+#skyscraper .logo-area {
+  padding-bottom: 10px;
+}
+/* line 44, ../../sass/_general-new.scss */
+#skyscraper .banner-button {
+  bottom: 80px;
+}
+
+/*
+===============================================================
+WIDE SKYSCRAPPER Banner: w160 h600 image: w160 h276
+===============================================================
+*/
+/* line 54, ../../sass/_general-new.scss */
+#wide-skyscraper {
+  width: 160px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#wide-skyscraper .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 110px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#wide-skyscraper .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 276px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#wide-skyscraper .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#wide-skyscraper .logo-area {
+  max-height: 80px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#wide-skyscraper .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 66, ../../sass/_general-new.scss */
+#wide-skyscraper .banner-image {
+  background-image: url("/assets/img/banner/wide_skyscraperVERTICAL.jpg");
+}
+/* line 71, ../../sass/_general-new.scss */
+#wide-skyscraper .title-area h1 {
+  font-size: 18px;
+  line-height: 1.1;
+}
+/* line 78, ../../sass/_general-new.scss */
+#wide-skyscraper .subtitle-container h3 {
+  margin: 10px auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* line 86, ../../sass/_general-new.scss */
+#wide-skyscraper .banner-button {
+  bottom: 80px;
+}
+
+/*
+===============================================================
+HALF PAGE Banner: w300 h600 image: w300 h276
+===============================================================
+*/
+/* line 95, ../../sass/_general-new.scss */
+#half-page {
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#half-page .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 140px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#half-page .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 276px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#half-page .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#half-page .logo-area {
+  max-width: 100%;
+  max-height: 104px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#half-page .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: 104px;
+  max-width: 100%;
+  max-height: 104px;
+}
+/* line 107, ../../sass/_general-new.scss */
+#half-page .banner-image {
+  background-image: url("/assets/img/banner/half-pageSQUARE.jpg");
+}
+/* line 111, ../../sass/_general-new.scss */
+#half-page .title-area {
+  padding: 16px 12px 18px;
+}
+/* line 113, ../../sass/_general-new.scss */
+#half-page .title-area h1 {
+  /* font-weight: normal; */
+  font-size: 21px;
+  line-height: 1.1;
+}
+/* line 120, ../../sass/_general-new.scss */
+#half-page .subtitle-container {
+  left: 0;
+  height: 132px;
+  padding: 12px 12px 0;
+}
+/* line 125, ../../sass/_general-new.scss */
+#half-page .subtitle-container h2 {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.2;
+  /* font-weight: 600; */
+  display: none;
+}
+/* line 133, ../../sass/_general-new.scss */
+#half-page .subtitle-container h3 {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.2;
+}
+/* line 140, ../../sass/_general-new.scss */
+#half-page .banner-button {
+  width: 80px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+/*
+===============================================================
+VERTICAL RECTANGLE Banner: w240 h400 image: w240 h168
+===============================================================
+*/
+/* line 153, ../../sass/_general-new.scss */
+#vertical-rectangle {
+  width: 240px;
+  height: 400px;
+  width: 240px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#vertical-rectangle .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 80px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#vertical-rectangle .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 168px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#vertical-rectangle .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#vertical-rectangle .logo-area {
+  max-height: 100px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#vertical-rectangle .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 169, ../../sass/_general-new.scss */
+#vertical-rectangle .banner-image {
+  background-image: url("/assets/img/banner/vertical_rectangleSQUARE.jpg");
+}
+/* line 173, ../../sass/_general-new.scss */
+#vertical-rectangle .title-area {
+  padding: 18px 12px;
+}
+/* line 177, ../../sass/_general-new.scss */
+#vertical-rectangle .subtitle-container {
+  padding: 12px 8px 0;
+}
+/* line 182, ../../sass/_general-new.scss */
+#vertical-rectangle .subtitle-container h2 {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.2;
+  /* font-weight: 600; */
+  display: none;
+}
+/* line 190, ../../sass/_general-new.scss */
+#vertical-rectangle .subtitle-container h3 {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.2;
+}
+/* line 197, ../../sass/_general-new.scss */
+#vertical-rectangle .logo-area {
+  padding-left: 3px;
+  max-width: 234px;
+  padding-bottom: 10px;
+}
+/* line 204, ../../sass/_general-new.scss */
+#vertical-rectangle .banner-button {
+  top: 213px;
+  left: auto;
+  margin-left: auto;
+  right: 10px;
+}
+
+/*
+===============================================================
+SMALL SQUARE Banner: w200 h200 image: w200 h66
+===============================================================
+*/
+/* line 217, ../../sass/_general-new.scss */
+#small-square {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#small-square .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 60px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#small-square .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 66px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#small-square .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#small-square .logo-area {
+  max-height: 55px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#small-square .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 229, ../../sass/_general-new.scss */
+#small-square .banner-image {
+  background-image: url("/assets/img/banner/small_squareHORIZONTAL.jpg");
+}
+/* line 234, ../../sass/_general-new.scss */
+#small-square .title-area h1 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* line 242, ../../sass/_general-new.scss */
+#small-square .subtitle-container h2, #small-square .subtitle-container h3 {
+  font-size: 12px;
+}
+/* line 247, ../../sass/_general-new.scss */
+#small-square .logo-area {
+  text-align: center;
+}
+/* line 249, ../../sass/_general-new.scss */
+#small-square .logo-area .company-logo {
+  display: inline;
+  width: 120px;
+}
+/* line 255, ../../sass/_general-new.scss */
+#small-square .banner-button {
+  display: none;
+}
+
+/*
+===============================================================
+PORTRAIT Banner: w300 h1050 image: w300 h558
+===============================================================
+*/
+/* line 266, ../../sass/_general-new.scss */
+#portrait {
+  width: 300px;
+  height: 1050px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#portrait .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 185px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#portrait .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 558px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#portrait .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#portrait .logo-area {
+  max-height: 180px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#portrait .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 278, ../../sass/_general-new.scss */
+#portrait .banner-image {
+  background-image: url("/assets/img/banner/portraitVERTICAL.jpg");
+}
+/* line 282, ../../sass/_general-new.scss */
+#portrait .title-area {
+  padding: 20px;
+}
+/* line 284, ../../sass/_general-new.scss */
+#portrait .title-area h1 {
+  font-size: 28px;
+  line-height: 1.1;
+}
+/* line 290, ../../sass/_general-new.scss */
+#portrait .subtitle-container {
+  padding: 16px;
+}
+/* line 292, ../../sass/_general-new.scss */
+#portrait .subtitle-container h3 {
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 1.2;
+}
+/* line 299, ../../sass/_general-new.scss */
+#portrait .banner-button {
+  bottom: 120px;
+}
+/* line 303, ../../sass/_general-new.scss */
+#portrait .logo-area {
+  padding-bottom: 10px;
+}
+
+/*
+===============================================================
+MOBILE LEADERBOARD Banner: w320 h50 image: w122 h50
+===============================================================
+*/
+/* line 314, ../../sass/_general-new.scss */
+#mobile-leaderboard {
+  width: 320px;
+  height: 50px;
+  display: flex;
+}
+/* line 77, ../../sass/_mixins.scss */
+#mobile-leaderboard .title-area {
+  flex-shrink: 0;
+  width: 90px;
+  height: 100%;
+}
+/* line 86, ../../sass/_mixins.scss */
+#mobile-leaderboard .banner-image {
+  flex-shrink: 0;
+  flex-shrink: 0;
+  width: 120px;
+  height: 100%;
+}
+/* line 96, ../../sass/_mixins.scss */
+#mobile-leaderboard .subtitle-container {
+  height: 100%;
+  flex-grow: 1;
+}
+/* line 105, ../../sass/_mixins.scss */
+#mobile-leaderboard .logo-area {
+  max-width: 110px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#mobile-leaderboard .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 327, ../../sass/_general-new.scss */
+#mobile-leaderboard .banner-image {
+  background-image: url("/assets/img/banner/mobile_leaderboardHORIZONTAL.jpg");
+}
+/* line 331, ../../sass/_general-new.scss */
+#mobile-leaderboard .title-area {
+  display: table;
+  height: 100%;
+  padding: 6px;
+}
+/* line 335, ../../sass/_general-new.scss */
+#mobile-leaderboard .title-area h1 {
+  /* font-weight: normal; */
+  font-size: 9px;
+  line-height: 1.1;
+}
+
+/*
+===============================================================
+BANNER Banner: w468 h60 image: w224 h60
+===============================================================
+*/
+/* line 351, ../../sass/_general-new.scss */
+#banner {
+  width: 468px;
+  height: 60px;
+  display: flex;
+}
+/* line 77, ../../sass/_mixins.scss */
+#banner .title-area {
+  flex-shrink: 0;
+  width: 92px;
+  height: 100%;
+}
+/* line 86, ../../sass/_mixins.scss */
+#banner .banner-image {
+  flex-shrink: 0;
+  flex-shrink: 0;
+  width: 224px;
+  height: 100%;
+}
+/* line 96, ../../sass/_mixins.scss */
+#banner .subtitle-container {
+  height: 100%;
+  flex-grow: 1;
+}
+/* line 105, ../../sass/_mixins.scss */
+#banner .logo-area {
+  max-width: 152px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#banner .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 363, ../../sass/_general-new.scss */
+#banner .banner-image {
+  background-image: url("/assets/img/banner/bannerHORIZONTAL.jpg");
+}
+/* line 367, ../../sass/_general-new.scss */
+#banner .title-area {
+  padding: 6px;
+}
+/* line 369, ../../sass/_general-new.scss */
+#banner .title-area h1 {
+  /* font-weight: normal; */
+  font-size: 12px;
+  line-height: 1;
+}
+
+/*
+===============================================================
+SQUARE Banner: w250 h250 image: w250 h78
+===============================================================
+*/
+/* line 384, ../../sass/_general-new.scss */
+#square {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#square .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 64px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#square .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 78px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#square .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#square .logo-area {
+  max-height: 108px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#square .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 396, ../../sass/_general-new.scss */
+#square .banner-image {
+  background-image: url("/assets/img/banner/squareHORIZONTAL.jpg");
+}
+/* line 400, ../../sass/_general-new.scss */
+#square .title-area {
+  padding: 12px;
+}
+/* line 403, ../../sass/_general-new.scss */
+#square .title-area h1 {
+  /* font-weight: normal; */
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.2;
+}
+/* line 411, ../../sass/_general-new.scss */
+#square .subtitle-container {
+  padding: 8px;
+  text-align: left;
+}
+/* line 416, ../../sass/_general-new.scss */
+#square .logo-area {
+  width: 160px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-right: 0;
+  margin-left: auto;
+}
+/* line 424, ../../sass/_general-new.scss */
+#square .banner-button {
+  bottom: 10px;
+  left: 10px;
+  margin-left: 0;
+}
+
+/*
+===============================================================
+LARGE RECTANGLE Banner: w336 h280 image: w336 h98
+===============================================================
+*/
+/* line 437, ../../sass/_general-new.scss */
+#large-rectangle {
+  width: 336px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#large-rectangle .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 70px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#large-rectangle .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 98px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#large-rectangle .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#large-rectangle .logo-area {
+  max-height: 60px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#large-rectangle .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 449, ../../sass/_general-new.scss */
+#large-rectangle .banner-image {
+  background-image: url("/assets/img/banner/large_rectangleHORIZONTAL.jpg");
+}
+/* line 453, ../../sass/_general-new.scss */
+#large-rectangle .title-area {
+  padding: 10px 15px;
+}
+/* line 455, ../../sass/_general-new.scss */
+#large-rectangle .title-area h1 {
+  /* font-weight: normal; */
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.2;
+}
+/* line 463, ../../sass/_general-new.scss */
+#large-rectangle .subtitle-container {
+  padding: 8px;
+  text-align: left;
+}
+/* line 468, ../../sass/_general-new.scss */
+#large-rectangle .logo-area {
+  width: 220px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-right: 0;
+  margin-left: auto;
+}
+/* line 476, ../../sass/_general-new.scss */
+#large-rectangle .banner-button {
+  bottom: 10px;
+  left: 10px;
+  margin-left: 0;
+}
+
+/*
+===============================================================
+INLINE RECTANGLE Banner: w300 h250 image: w300 h78
+===============================================================
+*/
+/* line 489, ../../sass/_general-new.scss */
+#inline-rectangle {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#inline-rectangle .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 70px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#inline-rectangle .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 78px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#inline-rectangle .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#inline-rectangle .logo-area {
+  max-width: 200px;
+  max-height: 60px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#inline-rectangle .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 501, ../../sass/_general-new.scss */
+#inline-rectangle .banner-image {
+  background-image: url("/assets/img/banner/inline_rectangleHORIZONTAL.jpg");
+}
+/* line 505, ../../sass/_general-new.scss */
+#inline-rectangle .title-area {
+  padding: 8px 15px;
+}
+/* line 507, ../../sass/_general-new.scss */
+#inline-rectangle .title-area h1 {
+  /* font-weight: normal; */
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.2;
+}
+/* line 515, ../../sass/_general-new.scss */
+#inline-rectangle .subtitle-container {
+  padding: 8px;
+  text-align: left;
+}
+/* line 520, ../../sass/_general-new.scss */
+#inline-rectangle .logo-area {
+  width: 220px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-right: 0;
+  margin-left: auto;
+}
+/* line 528, ../../sass/_general-new.scss */
+#inline-rectangle .banner-button {
+  bottom: 10px;
+  left: 10px;
+  margin-left: 0;
+}
+
+/*
+===============================================================
+LARGE LEADERBOARD Banner: w970 h90 image: w434 h90
+===============================================================
+*/
+/* line 541, ../../sass/_general-new.scss */
+#large-leaderboard {
+  width: 970px;
+  height: 90px;
+  display: flex;
+}
+/* line 77, ../../sass/_mixins.scss */
+#large-leaderboard .title-area {
+  flex-shrink: 0;
+  width: 224px;
+  height: 100%;
+}
+/* line 86, ../../sass/_mixins.scss */
+#large-leaderboard .banner-image {
+  flex-shrink: 0;
+  flex-shrink: 0;
+  width: 434px;
+  height: 100%;
+}
+/* line 96, ../../sass/_mixins.scss */
+#large-leaderboard .subtitle-container {
+  height: 100%;
+  flex-grow: 1;
+}
+/* line 105, ../../sass/_mixins.scss */
+#large-leaderboard .logo-area {
+  max-width: 312px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#large-leaderboard .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 554, ../../sass/_general-new.scss */
+#large-leaderboard .banner-image {
+  background-image: url("/assets/img/banner/large_leaderboardHORIZONTAL.jpg");
+}
+/* line 560, ../../sass/_general-new.scss */
+#large-leaderboard .title-area {
+  padding: 8px;
+}
+/* line 562, ../../sass/_general-new.scss */
+#large-leaderboard .title-area h1 {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.1;
+}
+/* line 567, ../../sass/_general-new.scss */
+#large-leaderboard .title-area h3 {
+  font-size: 10px;
+}
+/* line 572, ../../sass/_general-new.scss */
+#large-leaderboard .subtitle-container {
+  padding: 15px;
+}
+/* line 574, ../../sass/_general-new.scss */
+#large-leaderboard .subtitle-container h2 {
+  /* font-weight: 600; */
+  font-size: 15px;
+  line-height: 1.2;
+  display: none;
+}
+/* line 580, ../../sass/_general-new.scss */
+#large-leaderboard .subtitle-container h3 {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.2;
+}
+/* line 587, ../../sass/_general-new.scss */
+#large-leaderboard .banner-button {
+  bottom: 10px;
+  left: 240px;
+  margin-left: 0;
+}
+
+/*
+===============================================================
+BILLBOARD Banner: w970 h250 image: w410 h250
+===============================================================
+*/
+/* line 599, ../../sass/_general-new.scss */
+#billboard {
+  width: 970px;
+  height: 250px;
+  display: flex;
+}
+/* line 77, ../../sass/_mixins.scss */
+#billboard .title-area {
+  flex-shrink: 0;
+  width: 270px;
+  height: 100%;
+}
+/* line 86, ../../sass/_mixins.scss */
+#billboard .banner-image {
+  flex-shrink: 0;
+  flex-shrink: 0;
+  width: 410px;
+  height: 100%;
+}
+/* line 96, ../../sass/_mixins.scss */
+#billboard .subtitle-container {
+  height: 100%;
+  flex-grow: 1;
+}
+/* line 105, ../../sass/_mixins.scss */
+#billboard .logo-area {
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#billboard .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 612, ../../sass/_general-new.scss */
+#billboard .banner-image {
+  background-image: url("/assets/img/banner/billboardHORIZONTAL.jpg");
+}
+/* line 618, ../../sass/_general-new.scss */
+#billboard .title-area h1 {
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.2;
+}
+/* line 625, ../../sass/_general-new.scss */
+#billboard .subtitle-container {
+  padding: 10px;
+  height: auto;
+}
+/* line 630, ../../sass/_general-new.scss */
+#billboard .logo-area {
+  height: auto;
+  padding: 10px;
+}
+/* line 635, ../../sass/_general-new.scss */
+#billboard .banner-button {
+  left: 10px;
+  bottom: 10px;
+  margin-left: 0;
+}
+
+/*
+===============================================================
+LEADERBOARD Banner: w728 h90 image: w360 h90
+===============================================================
+*/
+/* line 647, ../../sass/_general-new.scss */
+#leaderboard {
+  width: 728px;
+  height: 90px;
+  display: flex;
+}
+/* line 77, ../../sass/_mixins.scss */
+#leaderboard .title-area {
+  flex-shrink: 0;
+  width: 190px;
+  height: 100%;
+}
+/* line 86, ../../sass/_mixins.scss */
+#leaderboard .banner-image {
+  flex-shrink: 0;
+  flex-shrink: 0;
+  width: 380px;
+  height: 100%;
+}
+/* line 96, ../../sass/_mixins.scss */
+#leaderboard .subtitle-container {
+  height: 100%;
+  flex-grow: 1;
+}
+/* line 105, ../../sass/_mixins.scss */
+#leaderboard .logo-area {
+  max-width: 158px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#leaderboard .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 659, ../../sass/_general-new.scss */
+#leaderboard .banner-image {
+  background-image: url("/assets/img/banner/large_leaderboardHORIZONTAL.jpg");
+}
+/* line 663, ../../sass/_general-new.scss */
+#leaderboard .title-area {
+  padding: 8px;
+}
+/* line 665, ../../sass/_general-new.scss */
+#leaderboard .title-area h1 {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.1;
+  font-weight: 400;
+}
+/* line 671, ../../sass/_general-new.scss */
+#leaderboard .title-area h3 {
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 1.1;
+}
+/* line 678, ../../sass/_general-new.scss */
+#leaderboard .banner-button {
+  left: 200px;
+  margin-left: 0;
+  bottom: 10px;
+}
+
+/*
+===============================================================
+LARGE MOBILE Banner: w320 h100 image: w114 h100
+===============================================================
+*/
+/* line 689, ../../sass/_general-new.scss */
+#large-mobile {
+  width: 320px;
+  height: 100px;
+  display: flex;
+}
+/* line 77, ../../sass/_mixins.scss */
+#large-mobile .title-area {
+  flex-shrink: 0;
+  width: 206px;
+  height: 100%;
+}
+/* line 86, ../../sass/_mixins.scss */
+#large-mobile .banner-image {
+  flex-shrink: 0;
+  flex-shrink: 0;
+  width: 114px;
+  height: 100%;
+}
+/* line 96, ../../sass/_mixins.scss */
+#large-mobile .subtitle-container {
+  height: 100%;
+  flex-grow: 1;
+}
+/* line 105, ../../sass/_mixins.scss */
+#large-mobile .logo-area {
+  max-width: 206px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#large-mobile .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 702, ../../sass/_general-new.scss */
+#large-mobile .banner-image {
+  background-image: url("/assets/img/banner/large_mobile_bannerSQUARE.jpg");
+}
+/* line 706, ../../sass/_general-new.scss */
+#large-mobile .title-area {
+  padding: 10px 2px 0 6px;
+}
+/* line 709, ../../sass/_general-new.scss */
+#large-mobile .title-area h1 {
+  font-size: 15px;
+  line-height: 1.1;
+}
+/* line 714, ../../sass/_general-new.scss */
+#large-mobile .flex-column {
+  width: 206px;
+}
+/* line 717, ../../sass/_general-new.scss */
+#large-mobile .title-area {
+  height: 50px;
+}
+/* line 720, ../../sass/_general-new.scss */
+#large-mobile .title-area h2 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  display: none;
+}
+/* line 727, ../../sass/_general-new.scss */
+#large-mobile .title-area h3 {
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 1.2;
+  /* display: none; */
+}
+/* line 735, ../../sass/_general-new.scss */
+#large-mobile .logo-area {
+  padding: 4px;
+}
+
+/*
+===============================================================
+NETBOARD Banner: w580 h400 image: w580 h185
+===============================================================
+*/
+/* line 747, ../../sass/_general-new.scss */
+#netboard {
+  width: 580px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 44, ../../sass/_mixins.scss */
+#netboard .title-area {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100px;
+}
+/* line 53, ../../sass/_mixins.scss */
+#netboard .banner-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: 185px;
+}
+/* line 58, ../../sass/_mixins.scss */
+#netboard .subtitle-container {
+  width: 100%;
+  flex-grow: 1;
+}
+/* line 68, ../../sass/_mixins.scss */
+#netboard .logo-area {
+  max-width: 290px;
+  max-height: 115px;
+  flex-shrink: 0;
+}
+/* line 17, ../../sass/_mixins.scss */
+#netboard .logo-area .company-logo {
+  width: 100%;
+  height: auto;
+  max-height: false;
+}
+/* line 759, ../../sass/_general-new.scss */
+#netboard .banner-image {
+  background-image: url("/assets/img/banner/netboardHORIZONTAL.jpg");
+}
+/* line 763, ../../sass/_general-new.scss */
+#netboard .title-area {
+  padding: 15px;
+}
+/* line 765, ../../sass/_general-new.scss */
+#netboard .title-area h1 {
+  font-size: 28px;
+  text-align: left;
+  line-height: 1.1;
+}
+/* line 772, ../../sass/_general-new.scss */
+#netboard .subtitle-container {
+  height: 100%;
+  padding: 10px 64px 0 12px;
+}
+/* line 776, ../../sass/_general-new.scss */
+#netboard .subtitle-container h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 3px;
+}
+/* line 783, ../../sass/_general-new.scss */
+#netboard .table-cell {
+  vertical-align: bottom;
+}
+/* line 787, ../../sass/_general-new.scss */
+#netboard .banner-button {
+  left: 10px;
+  bottom: 10px;
+  margin-left: 0;
+}

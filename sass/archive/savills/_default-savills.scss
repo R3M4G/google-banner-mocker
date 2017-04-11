@@ -1,0 +1,190 @@
+// Foundation properties for the classes in each banner type
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.flex-row {
+	display: flex;
+	display: -webkit-box;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	flex-direction: row;
+	flex-flow: row;
+}
+
+.flex-column {
+	display: flex;
+	display: -webkit-box;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	flex-direction: column;
+	flex-flow: column;
+  width: 100%;
+}
+
+.table {
+	margin-bottom: 0;
+}
+
+body {
+	background-color: #cccccc;
+}
+
+.wrapper {
+
+	h1,
+	h2,
+	h3 {
+		margin: 0;
+	}
+
+	img {
+    vertical-align: middle;
+		border: 0;
+		max-height: 100%;
+		max-width: 100%;
+
+	}
+	&.vertical {
+		float: left;
+		margin: 30px 30px 10px 0;
+	}
+	&.horizontal {
+		display: block;
+		clear: both;
+	}
+
+	.inner.absolute {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.table {
+		display: table;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		.table-cell {
+			display: table-cell;
+			vertical-align: middle;
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	> div {
+		// border: 1px solid black;
+		position: relative;
+		overflow: hidden;
+		font-family: $primaryFont;
+		@include cross-font-smoothing();
+		background-color: $secondaryBg;
+		h1, h2, h3 {
+			font-weight: normal;
+		}
+		> div {
+			overflow: hidden;
+			// border: 1px dotted orange;
+			/* HACKS WHKHTMLTOIMAGE */
+		}
+	}
+
+	.title-area {
+		color: $primaryFontColor;
+		background-color: $primaryBgColor;
+		text-transform: $title-transform;
+		h1 {
+			padding: 4%;
+			font-size: 16px;
+			text-align: center;
+			margin: 0 auto;
+			font-family: $primaryFont;
+		}
+	}
+
+	.subtitle-container {
+		color: $secondaryFontColor;
+		background-color: $secondaryBgColor;
+		text-align: center;
+		> * {
+			margin: 0;
+		}
+		h3,h2 {
+			font-size: 16px;
+			padding: 6% 4% 0 4%;
+			white-space: normal !important;
+			word-break: break-word !important;
+			font-family: $primaryFont;
+		}
+	}
+
+	.logo-area {
+		background-color: $secondaryBg;
+		position: relative;
+		text-align: center;
+		.inner {
+			.table {
+				.table-cell {
+					vertical-align: bottom;
+					padding-bottom: 20px;
+					.company-logo {
+						height: 60px;
+						width: auto;
+					}
+					// background-image: url('../img/savills.png');
+					// background-size: 70px auto;
+					// background-repeat: no-repeat;
+					// background-position: center center;
+				}
+			}
+		}
+	}
+
+	.button-area {
+		position: relative;
+	}
+	.banner-button {
+		width: 80px;
+		z-index: 10;
+		@include cross-border-radius(0);
+		height: 20px;
+		position: absolute;
+		bottom: 100px;
+		left: 50%;
+		margin-left: -40px;
+		background-color: $buttonBg;
+		p {
+			margin: 1px 0 0 0;
+			height: inherit;
+			font-weight: bold;
+			position: relative;
+			color: $buttonTextColor;
+			background-color: $buttonBg;
+			text-align: center;
+			font-size: 10px;
+			line-height: 20px;
+			text-transform: uppercase;
+
+		}
+		&.small {
+			width: 68px;
+			margin-left: -34px;
+			p {
+				font-size: 8px;
+			}
+		}
+	}
+
+	.banner-image {
+		background-color: $imageContainerBg;
+		background-repeat: no-repeat;
+	}
+}

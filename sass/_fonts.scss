@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'franklingothic-book';
+	src: url('../fonts/franklingothic/franklingothic-book-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'franklingothic-demi';
+	src: url('../fonts/franklingothic/franklingothic-demi-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// @font-face{
+// 		font-family:"Museo Sans";
+// 		font-weight: normal;
+// 		src:url("../fonts/museo-sans/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix");
+// 		src:url("../fonts/museo-sans/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot"),
+// 		url("../fonts/museo-sans/1d3191cd-ae8c-45e2-bb04-11e96d8fa974.woff2") format("woff2"),
+// 		url("../fonts/museo-sans/b252d464-65cb-4950-88f7-ac0a1bf79b75.woff") format("woff"),
+// 		url("../fonts/museo-sans/b3d18117-6517-4d3f-afc1-774086ff5fc1.ttf") format("truetype"),
+// 		url("../fonts/museo-sans/b9bed509-0816-43d8-b14b-7525a21f4bde.svg#b9bed509-0816-43d8-b14b-7525a21f4bde") format("svg");
+// }
+
+// @font-face{
+// 		font-family:"Museo Sans";
+// 		font-weight: bold;
+// 		src:url("../fonts/museo-sans/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+// 		src:url("../fonts/museo-sans/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),
+// 		url("../fonts/museo-sans/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),
+// 		url("../fonts/museo-sans/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),
+// 		url("../fonts/museo-sans/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),
+// 		url("../fonts/museo-sans/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+// }
+
+// @font-face{
+//     font-family:"Neuzeit Grotesk";
+// 		font-weight: normal;
+//     src:url("../fonts/neuzeit-grotesk/76cc538f-bd82-4bd9-a19c-d28eb529ad11.eot?#iefix");
+//     src:url("../fonts/neuzeit-grotesk/76cc538f-bd82-4bd9-a19c-d28eb529ad11.eot?#iefix") format("eot"),
+//     url("../fonts/neuzeit-grotesk/d33f718f-1aa2-43db-ad60-7d79aa87de0a.woff2") format("woff2"),
+//     url("../fonts/neuzeit-grotesk/2d76f703-cb26-46a0-954a-53cc641b9b3b.woff") format("woff"),
+//     url("../fonts/neuzeit-grotesk/3b12e571-5103-4d94-9ba8-2dc8e8ff6550.ttf") format("truetype"),
+//     url("../fonts/neuzeit-grotesk/ced3da05-8be1-45e3-b183-0b0df57501e0.svg#ced3da05-8be1-45e3-b183-0b0df57501e0") format("svg");
+// }
+// @font-face{
+//     font-family:"Neuzeit Grotesk";
+// 		font-weight: bold;
+//     src:url("../fonts/neuzeit-grotesk/66182542-0bb8-41e7-94b8-f45d24bea18d.eot?#iefix");
+//     src:url("../fonts/neuzeit-grotesk/66182542-0bb8-41e7-94b8-f45d24bea18d.eot?#iefix") format("eot"),
+//     url("../fonts/neuzeit-grotesk/8dfba670-079e-4879-8b0a-8d079ab7c067.woff2") format("woff2"),
+//     url("../fonts/neuzeit-grotesk/218401dc-d400-4482-8c9b-0527059f7559.woff") format("woff"),
+//     url("../fonts/neuzeit-grotesk/ace900f9-272b-4efa-88b0-6f2b1adc0f41.ttf") format("truetype"),
+//     url("../fonts/neuzeit-grotesk/eeb8e139-b0e6-40d3-820c-0011bcf71e43.svg#eeb8e139-b0e6-40d3-820c-0011bcf71e43") format("svg");
+// }
+
+// @font-face{
+// 		font-family:"Helvetica Neue";
+// 		src:url("../fonts/helvetica-neue/706ec8e5-fe4a-4518-91a6-7aba4d3d333f.eot?#iefix");
+// 		src:url("../fonts/helvetica-neue/706ec8e5-fe4a-4518-91a6-7aba4d3d333f.eot?#iefix") format("eot"),
+// 		url("../fonts/helvetica-neue/dc50c02f-3f77-4e75-b89c-e3f9bb4752e6.woff2") format("woff2"),
+// 		url("../fonts/helvetica-neue/ce6f5b38-1cb5-4a27-8182-583aa68b2436.woff") format("woff"),
+// 		url("../fonts/helvetica-neue/ff06cde7-e06a-4cf0-af4d-5b2f737bf544.ttf") format("truetype"),
+// 		url("../fonts/helvetica-neue/958b12cf-2908-4254-8cb9-9b12c3aa151e.svg#958b12cf-2908-4254-8cb9-9b12c3aa151e") format("svg");
+// 		font-weight: normal;
+// }
+// @font-face{
+// 		font-family:"Helvetica Neue";
+// 		src:url("../fonts/helvetica-neue/a747e1ea-ecdf-4f3d-ad47-3df9cfbee3cc.eot?#iefix");
+// 		src:url("../fonts/helvetica-neue/a747e1ea-ecdf-4f3d-ad47-3df9cfbee3cc.eot?#iefix") format("eot"),
+// 		url("../fonts/helvetica-neue/3e8a8b56-3cb0-4347-b670-eaaf06b76e9b.woff2") format("woff2"),
+// 		url("../fonts/helvetica-neue/07173950-fa69-4b65-9c71-0cf2ec00b51d.woff") format("woff"),
+// 		url("../fonts/helvetica-neue/aac5a4b8-ffd3-4529-a098-21b91bc86f9a.ttf") format("truetype"),
+// 		url("../fonts/helvetica-neue/2379b081-2371-47d9-8be9-4e39d7892ebf.svg#2379b081-2371-47d9-8be9-4e39d7892ebf") format("svg");
+// 		font-weight: bold;
+// }
+
+
+// @font-face{
+// 	font-family:"DinText";
+// 	font-weight: normal;
+// 	src:url("../fonts/din/5c8937e3-1be5-4783-8945-a7fb47ea2686.eot?#iefix");
+// 	src:url("../fonts/din/5c8937e3-1be5-4783-8945-a7fb47ea2686.eot?#iefix") format("eot"),
+// 		url("../fonts/din/bf3ef48c-923f-4352-80f7-c7ade7e574ad.woff2") format("woff2"),
+// 		url("../fonts/din/2142edef-2fe7-4c85-bbaa-25b17c4c91c5.woff") format("woff"),
+// 		url("../fonts/din/b75b7312-679f-46cf-ad85-dc5e22985998.ttf") format("truetype"),
+// 		url("../fonts/din/e4cd9354-1006-489c-90ec-f627f94284e2.svg#e4cd9354-1006-489c-90ec-f627f94284e2") format("svg");
+// }
+// @font-face{
+// 	font-family:"DinText";
+// 	font-weight: bold;
+// 	src:url("../fonts/din/dcc333e0-c41b-47ab-96af-39fb9f33eb6c.eot?#iefix");
+// 	src:url("../fonts/din/dcc333e0-c41b-47ab-96af-39fb9f33eb6c.eot?#iefix") format("eot"),
+// 		url("../fonts/din/3e2f3f3f-99f8-4aa2-9587-c2f608ab2bd0.woff2") format("woff2"),
+// 		url("../fonts/din/029127ca-1ce7-49f1-ba40-b581b7fc68b0.woff") format("woff"),
+// 		url("../fonts/din/289a83c5-555d-4279-98b9-6f3a0f24c87e.ttf") format("truetype"),
+// 		url("../fonts/din/102eb4ab-c0f8-4576-9a27-3b2aa6f86518.svg#102eb4ab-c0f8-4576-9a27-3b2aa6f86518") format("svg");
+// }
+
+
+// @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
